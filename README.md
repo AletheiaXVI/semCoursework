@@ -1,6 +1,5 @@
 # Software Engineering Methods Coursework
 ---
-It's very cool coursework :)
 
 # Code Of Conduct
 1. Our team is committed to achieving the objectives of our project
