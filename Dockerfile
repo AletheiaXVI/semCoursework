@@ -1,4 +1,4 @@
-FROM mysql
+FROM openjdk:20
+COPY ./target/semCoursework-0.1.0.2-jar-with-dependencies.jar /tmp
 WORKDIR /tmp
-COPY world.sql /docker-entrypoint-initdb.d
-ENV MYSQL_ROOT_PASSWORD example
+ENTRYPOINT ["java", "-jar", "semCoursework-0.1.0.2-jar-with-dependencies.jar"]
