@@ -24,8 +24,8 @@ public class App
             System.out.println("Connecting to database...");
             try
             {
-                Thread.sleep(30000);
-                con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
+                Thread.sleep(5000);
+                con = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
                 break;
             }
