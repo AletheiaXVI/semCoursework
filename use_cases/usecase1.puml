@@ -1,0 +1,32 @@
+@startuml
+skinparam actorStyle awesome
+
+
+actor "System User (Statistican)" as SU
+
+rectangle {
+  usecase (Generate World Countries Report) as UC1
+  usecase (Generate Continent Countries Report) as UC2
+  usecase (Generate Region Countries Report) as UC3
+  usecase (Generate Top N World Countries Report) as UC4
+  usecase (Generate Top N Continent Countries Report) as UC5
+  usecase (Generate Top N Region Countries Report) as UC6
+  usecase (Export to Text File/Report) as UC7
+}
+
+note "Reports contain Country Code, Name, Continent, Region, Population & Capital" as Note1
+
+SU --> UC1
+SU --> UC2
+SU --> UC3
+SU --> UC4
+SU --> UC5
+SU --> UC6
+
+UC1 ..> UC7 : Export
+UC2 ..> UC7 : Export
+UC3 ..> UC7 : Export
+UC4 ..> UC7 : Export
+UC5 ..> UC7 : Export
+UC6 ..> UC7 : Export
+@enduml
