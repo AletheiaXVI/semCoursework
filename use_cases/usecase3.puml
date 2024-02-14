@@ -1,0 +1,23 @@
+@startuml
+actor DataAnalyst as DA
+rectangle {
+usecase (View Capital City Information) as UC1
+usecase (Filter By Continent) as UC2
+usecase (Filter By Region) as UC3
+usecase (Display Top N Cities) as UC4
+usecase (Export to Text File/Report) as UC7
+}
+
+DA --> UC1
+DA --> UC2
+DA --> UC3
+DA --> UC4
+
+note "Reports contain each capital cities Name, Country, Population" as Note1
+
+UC1 ..> UC7 : Export
+UC2 ..> UC7 : Export
+UC3 ..> UC7 : Export
+UC4 ..> UC7 : Export
+
+@enduml
