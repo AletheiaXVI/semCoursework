@@ -20,22 +20,26 @@ public class Country {
     private final int capital;
     private final String code2;
 
-    public Country(ResultSet rs) throws SQLException {
-        this.code = rs.getString("Code");
-        this.name = rs.getString("Name");
-        this.continent = Continent.valueOf(rs.getString("Continent"));
-        this.region = rs.getString("Region");
-        this.surfaceArea = rs.getDouble("SurfaceArea");
-        this.indepYear = rs.getInt("IndepYear");
-        this.population = rs.getInt("Population");
-        this.lifeExpectancy = rs.getDouble("LifeExpectancy");
-        this.gnp = rs.getDouble("GNP");
-        this.gnpOld = rs.getDouble("GNPOld");
-        this.localName = rs.getString("LocalName");
-        this.governmentForm = rs.getString("GovernmentForm");
-        this.headOfState = rs.getString("HeadOfState");
-        this.capital = rs.getInt("Capital");
-        this.code2 = rs.getString("Code2");
+    public Country(ResultSet rs) {
+        try {
+            this.code = rs.getString("Code");
+            this.name = rs.getString("Name");
+            this.continent = Continent.valueOf(rs.getString("Continent").toUpperCase());
+            this.region = rs.getString("Region");
+            this.surfaceArea = rs.getDouble("SurfaceArea");
+            this.indepYear = rs.getInt("IndepYear");
+            this.population = rs.getInt("Population");
+            this.lifeExpectancy = rs.getDouble("LifeExpectancy");
+            this.gnp = rs.getDouble("GNP");
+            this.gnpOld = rs.getDouble("GNPOld");
+            this.localName = rs.getString("LocalName");
+            this.governmentForm = rs.getString("GovernmentForm");
+            this.headOfState = rs.getString("HeadOfState");
+            this.capital = rs.getInt("Capital");
+            this.code2 = rs.getString("Code2");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String getCode() {
@@ -96,6 +100,27 @@ public class Country {
 
     public String getCode2() {
         return code2;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", continent=" + continent +
+                ", region='" + region + '\'' +
+                ", surfaceArea=" + surfaceArea +
+                ", indepYear=" + indepYear +
+                ", population=" + population +
+                ", lifeExpectancy=" + lifeExpectancy +
+                ", gnp=" + gnp +
+                ", gnpOld=" + gnpOld +
+                ", localName='" + localName + '\'' +
+                ", governmentForm='" + governmentForm + '\'' +
+                ", headOfState='" + headOfState + '\'' +
+                ", capital=" + capital +
+                ", code2='" + code2 + '\'' +
+                '}';
     }
 }
 

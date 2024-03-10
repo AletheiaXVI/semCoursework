@@ -10,11 +10,22 @@ import java.util.concurrent.TimeUnit;
  */
 public class DatabaseConnection {
 
-    private static final String DB_URL = "jdbc:mysql://db:3306/world?useSSL=false";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "example";
+    private final String dbUrl;
+    private final String dbUser;
+    private final String dbPassword;
 
     private Connection con;
+
+    private DatabaseConnection(String dbUrl, String dbUser, String dbPassword) {
+        this.dbUrl = dbUrl;
+        this.dbUser = dbUser;
+        this.dbPassword = dbPassword;
+    }
+
+    public static DatabaseConnection of(String dbUrl, String dbUser, String dbPassword) {
+        return new DatabaseConnection(dbUrl, dbUser, dbPassword);
+    }
+
 
     /**
      * Connects to the MySQL database and creates a new connection.
@@ -32,7 +43,7 @@ public class DatabaseConnection {
         for (int i = 1; i <= retries; i++) {
             System.out.println("Connecting to database... Attempt " + i + "/" + retries);
             try {
-                con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+                con = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
                 System.out.println("Successfully connected");
                 return;
             } catch (SQLException ex) {
@@ -42,7 +53,7 @@ public class DatabaseConnection {
             try {
                 TimeUnit.SECONDS.sleep(5);
             } catch (InterruptedException ex) {
-                Thread.currentThread().interrupt();
+                Thread.currentThread().interrupt(); // interrupt the thread if sleep is interrupted
                 System.err.println("Thread interrupted");
             }
         }
