@@ -25,7 +25,6 @@ jobs:
           mvn -Dtest=com.napier.sem.test.SQLTests test
           docker stop db
           docker rm db
-          docker image rm db
   build:
     runs-on: ubuntu-latest
 
