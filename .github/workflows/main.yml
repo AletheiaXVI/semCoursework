@@ -19,7 +19,13 @@ jobs:
           java-version: '20'
           distribution: 'adopt'
       - name: Unit Tests
-        run: mvn -Dtest=com.napier.sem.test.SQLTests test
+        run: |
+          docker build -t database ./db 
+          docker run --name db -dp 33060:3306 database
+          mvn -Dtest=com.napier.sem.AppIntegrationTest test
+          docker stop db
+          docker rm db
+          docker image rm db
   build:
     runs-on: ubuntu-latest
 
