@@ -9,8 +9,6 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SQLTests {
@@ -21,7 +19,7 @@ public class SQLTests {
     @BeforeAll
     static void init() {
         dbCon = DatabaseConnection.of(
-                "jdbc:mysql://localhost:33060/world?useSSL=false",
+                "jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
                 "root",
                 "example"
         );
