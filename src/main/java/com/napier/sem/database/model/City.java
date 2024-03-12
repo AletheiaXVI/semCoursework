@@ -3,6 +3,9 @@ package com.napier.sem.database.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Represents a row in the City table in the database.
+ */
 public class City {
     private final int id;
     private final String name;

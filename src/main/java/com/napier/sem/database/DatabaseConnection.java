@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Class that handles the connection to the MySQL database.
+ * @author Oskar Budzisz
  */
 public class DatabaseConnection {
 
@@ -16,13 +17,28 @@ public class DatabaseConnection {
 
     private Connection con;
 
+    /**
+     * Constructor for the DatabaseConnection class. It is private to prevent instantiation of the class
+     *
+     * @param dbUrl      URL of the MySQL database
+     * @param dbUser     Username to connect to the MySQL database
+     * @param dbPassword Password to connect to the MySQL database
+     */
     private DatabaseConnection(String dbUrl, String dbUser, String dbPassword) {
         this.dbUrl = dbUrl;
         this.dbUser = dbUser;
         this.dbPassword = dbPassword;
     }
 
-    public static DatabaseConnection of(String dbUrl, String dbUser, String dbPassword) {
+    /**
+     * Factory method to create a new DatabaseConnection object.
+     *
+     * @param dbUrl      URL of the MySQL database
+     * @param dbUser     Username to connect to the MySQL database
+     * @param dbPassword Password to connect to the MySQL database
+     * @return A new DatabaseConnection object
+     */
+    public static DatabaseConnection from(String dbUrl, String dbUser, String dbPassword) {
         return new DatabaseConnection(dbUrl, dbUser, dbPassword);
     }
 

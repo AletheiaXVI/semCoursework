@@ -11,11 +11,17 @@ import java.util.function.Function;
 /**
  * Class that maps the result of a query to an object or a list of objects.
  * The connection to the database is provided in the constructor.
+ * @author Oskar Budzisz
  */
 public class ObjectMapper {
 
     private final Connection connection;
 
+    /**
+     * Creates a new ObjectMapper with the provided connection.
+     *
+     * @param connection The connection to the database.
+     */
     public ObjectMapper(Connection connection) {
         this.connection = connection;
     }
@@ -41,7 +47,8 @@ public class ObjectMapper {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Error occurred whilst executing query: " + query);
+            System.out.println(e.getMessage());
         }
         return null;
     }
@@ -68,7 +75,8 @@ public class ObjectMapper {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Error occurred whilst executing query: " + query);
+            System.out.println(e.getMessage());
         }
         return objects;
     }

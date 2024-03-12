@@ -5,7 +5,7 @@ import com.napier.sem.database.DatabaseConnection;
 
 public class Application {
 
-    private final DatabaseConnection dbCon = DatabaseConnection.of(
+    private final DatabaseConnection dbCon = DatabaseConnection.from(
             "jdbc:mysql://db:3306/world?useSSL=false",
             "root",
             "example"
@@ -17,8 +17,6 @@ public class Application {
     public void run()
     {
         dbCon.connect();
-
-
 
         dbCon.disconnect();
     }

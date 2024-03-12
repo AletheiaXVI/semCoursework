@@ -3,7 +3,11 @@ package com.napier.sem.database.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Represents a row in the CountryLanguage table in the database.
+ */
 public class CountryLanguage {
+
     private final String countryCode;
     private final String language;
     private final boolean isOfficial;

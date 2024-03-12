@@ -18,7 +18,7 @@ public class SQLTests {
 
     @BeforeAll
     static void init() {
-        dbCon = DatabaseConnection.of(
+        dbCon = DatabaseConnection.from(
                 "jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
                 "root",
                 "example"

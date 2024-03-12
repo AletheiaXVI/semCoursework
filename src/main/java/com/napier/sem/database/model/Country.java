@@ -3,6 +3,9 @@ package com.napier.sem.database.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Represents a row in the Country table in the database.
+ */
 public class Country {
     private final String code;
     private final String name;
