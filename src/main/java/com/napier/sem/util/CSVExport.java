@@ -67,7 +67,7 @@ public class CSVExport {
 
 
         //ArrayList<String[]> countryData = new CSVExport();
-        countryData.add(Country::getCode());
+        //countryData.add(Country::getCode());
 
         // Create a CsvWriter instance and write the data to a file
         CSVExport writer = new CSVExport();
