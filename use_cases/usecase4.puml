@@ -1,0 +1,24 @@
+@startuml
+actor DataAnalyst as DA
+rectangle {
+usecase (View Geographic Area Information) as UC1
+usecase (Filter By Continent) as UC2
+usecase (Filter By Region) as UC3
+usecase (Display Language Distribution) as UC4
+usecase (Export to Text File/Report) as UC5
+}
+
+DA --> UC1
+DA --> UC2
+DA --> UC3
+DA --> UC4
+DA --> UC5
+
+note "Reports include: geographic area name, total population, urban/rural percentages, and language distribution" as Note1
+
+UC1 ..> UC5 : Export
+UC2 ..> UC5 : Export
+UC3 ..> UC5 : Export
+UC4 ..> UC5 : Export
+
+@enduml
