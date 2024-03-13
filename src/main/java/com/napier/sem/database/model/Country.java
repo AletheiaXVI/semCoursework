@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class Country {
     private final String code;
     private final String name;
-    private final Continent continent;
+    private final String continent;
     private final String region;
     private final double surfaceArea;
     private final int indepYear;
@@ -27,7 +27,7 @@ public class Country {
         try {
             this.code = rs.getString("Code");
             this.name = rs.getString("Name");
-            this.continent = Continent.valueOf(rs.getString("Continent").toUpperCase());
+            this.continent = rs.getString("Continent");
             this.region = rs.getString("Region");
             this.surfaceArea = rs.getDouble("SurfaceArea");
             this.indepYear = rs.getInt("IndepYear");
@@ -53,7 +53,7 @@ public class Country {
         return name;
     }
 
-    public Continent getContinent() {
+    public String getContinent() {
         return continent;
     }
 
@@ -110,7 +110,7 @@ public class Country {
         return "Country{" +
                 "code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                ", continent=" + continent +
+                ", continent=" + continent + '\'' +
                 ", region='" + region + '\'' +
                 ", surfaceArea=" + surfaceArea +
                 ", indepYear=" + indepYear +
