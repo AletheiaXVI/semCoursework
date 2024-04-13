@@ -5,76 +5,123 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Stream;
+
+import com.napier.sem.database.DatabaseConnection;
+import com.napier.sem.database.ObjectMapper;
 import com.napier.sem.database.model.Country;
 
-// CSVExport class - Takes data and outputs .csv file
+
+/**
+ * This class exports data to a CSV format.
+ * @author James Vincent
+ */
 public class CSVExport {
-    // Constants for CSV formatting
-    private static final String COMMA = ",";
-    private static final String DOUBLE_QUOTES = "\"";
-    private static final String EMBEDDED_DOUBLE_QUOTES = "\"\"";
 
-    // Method to write data to a CSV file
-    public void writeToCSV(List<String[]> data, String filePath) throws IOException {
-        // Use try-with-resources to ensure the writer is closed properly
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            // Iterate over each row of data
-            for (String[] row : data) {
-                // Convert the row to CSV format and write it to the file
-                writer.write(convertToCSV(row));
-                // Write a newline character to start a new row
-                writer.newLine();
-            }
+    private static DatabaseConnection dbCon; // Database connection for data retrieval
+    private static ObjectMapper objectMapper; // Object mapper for interacting with the database
+
+    /**
+     * Sets up database connection and object mapper.
+     */
+    static void init() {
+
+        dbCon = DatabaseConnection.from(
+                "jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
+                "root",
+                "example"
+        );
+        dbCon.connect();
+        objectMapper = new ObjectMapper(dbCon.getConnection());
+    }
+
+    private static final String COMMA = ","; // Delimiter for separating fields in CSV
+    private static final String DOUBLE_QUOTES = "\""; // Character used to enclose fields in CSV
+    private static final String EMBEDDED_DOUBLE_QUOTES = "\"\""; // Escape sequence for quotes within a field
+
+    /**
+     * Formats a field for CSV by adding quotes if it has special characters.
+     *
+     * @param field The string representing a field in the CSV data.
+     * @return The formatted field string with proper escaping if necessary.
+     */
+    private String formatField(String field) {
+        if (field.contains(COMMA) || field.contains(DOUBLE_QUOTES) || field.contains("\n") || field.contains("\r")) {
+            return DOUBLE_QUOTES + field.replace(DOUBLE_QUOTES, EMBEDDED_DOUBLE_QUOTES) + DOUBLE_QUOTES;
         }
+        return field;
     }
 
-    // Method to convert a row of data to CSV format
-    private String convertToCSV(String[] row) {
-        // Join the row elements with commas
-        return String.join(COMMA, formatRow(row));
-    }
-
-    // Method to format each row of data
+    /**
+     * Prepares a row of data for CSV by escaping special characters.
+     *
+     * @param row The list of strings representing a row in the CSV file.
+     * @return A new array of strings with formatted fields for CSV output.
+     */
     private String[] formatRow(String[] row) {
-        // Formats each field in the row
         return Stream.of(row)
                 .map(this::formatField)
                 .toArray(String[]::new);
     }
 
-    // Method to format a field, handling special characters
-    private String formatField(String field) {
-        // If the field contains a comma, double quote, or newline, enclose it in double quotes
-        if (field.contains(COMMA) || field.contains(DOUBLE_QUOTES) || field.contains("\n") || field.contains("\r")) {
-            // Replace any existing double quotes in the field with two double quotes
-            return DOUBLE_QUOTES + field.replace(DOUBLE_QUOTES, EMBEDDED_DOUBLE_QUOTES) + DOUBLE_QUOTES;
-        }
-        // Otherwise, return the field as is
-        return field;
+    /**
+     * Converts a list of strings representing a row to a formatted CSV string.
+     *
+     * @param row The list of strings representing a row in the CSV file.
+     * @return The formatted CSV string representation of the row.
+     */
+    private String convertToCSV(String[] row) {
+        return String.join(COMMA, formatRow(row));
     }
 
-    //Main method for testing
+    /**
+     * Writes the provided data to a CSV file at the specified file path.
+     *
+     * @param data The list of string arrays representing the data to be written.
+     * @param filePath The path to the CSV file where the data will be written.
+     * @throws IOException If an error occurs during file writing.
+     */
+    public void writeToCSV(List<String[]> data, String filePath) throws IOException {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            for (String[] row : data) {
+                writer.write(convertToCSV(row));
+                writer.newLine();
+            }
+        }
+    }
+
     public static void main(String[] args) throws IOException {
-        // Example data to write to a CSV file
-        List<String[]> data = List.of(
-                new String[]{"Name", "Age", "Location"},
-                new String[]{"Sneebs", "27", "Fife"},
-                new String[]{"Bim Jimbus", "72", "308 Negra Arroyo Lane, Albuquerque, New Mexico, 87104"},
-                new String[]{"Chumba Wumbus", "59", "A Tesco car park in the middle of Scunthorpe" },
-                new String[]{"Andrew Cuomo", "17 months", "Bannamin Papil Bridge-End Burra, Shetland, ZE2 9UY"}
-        );
 
+        init(); // Connects to the database
 
-        //ArrayList<String[]> countryData = new CSVExport();
-        //countryData.add(Country::getCode());
+         // Converts a Country object to a String array suitable for CSV output
+        Function<Country, String[]> countryToStringArray = country -> new String[] {
+                country.getCode(),
+                country.getName(),
+                country.getContinent().toString(),
+                country.getRegion(),
+                String.valueOf(country.getSurfaceArea()),
+                String.valueOf(country.getIndepYear()),
+                String.valueOf(country.getPopulation()),
+                String.valueOf(country.getLifeExpectancy()),
+                String.valueOf(country.getGnp()),
+                String.valueOf(country.getGnpOld()),
+                country.getLocalName(),
+                country.getGovernmentForm(),
+                country.getHeadOfState(),
+                String.valueOf(country.getCapital()),
+                country.getCode2()
+        };
 
-        // Create a CsvWriter instance and write the data to a file
-        CSVExport writer = new CSVExport();
-        // Filepath goes to /semCoursework
-        writer.writeToCSV(data, "output.csv");
+        List<Country> countries = objectMapper.getObjectsFromDatabase("SELECT * FROM country", Country::new);
 
-        //CSVExport writerCountry = new CSVExport();
-        //writerCountry.writeToCSV();
+        List<String[]> data = new ArrayList<>();
+        for (Country country : countries) {
+            data.add(countryToStringArray.apply(country));
+        }
+
+        CSVExport writerCountry = new CSVExport();
+        writerCountry.writeToCSV(data, "Countries.csv");
     }
 }
