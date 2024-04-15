@@ -46,12 +46,17 @@ public class CSVExport {
      * @param field The string representing a field in the CSV data.
      * @return The formatted field string with proper escaping if necessary.
      */
+
     private String formatField(String field) {
+        if (field == null) {
+            return ""; // or some other default value
+        }
         if (field.contains(COMMA) || field.contains(DOUBLE_QUOTES) || field.contains("\n") || field.contains("\r")) {
             return DOUBLE_QUOTES + field.replace(DOUBLE_QUOTES, EMBEDDED_DOUBLE_QUOTES) + DOUBLE_QUOTES;
         }
         return field;
     }
+
 
     /**
      * Prepares a row of data for CSV by escaping special characters.
@@ -99,7 +104,7 @@ public class CSVExport {
         Function<Country, String[]> countryToStringArray = country -> new String[] {
                 country.getCode(),
                 country.getName(),
-                country.getContinent().toString(),
+                country.getContinent(),
                 country.getRegion(),
                 String.valueOf(country.getSurfaceArea()),
                 String.valueOf(country.getIndepYear()),
