@@ -74,7 +74,7 @@ public class Application {
         } catch (NoSuchElementException e) {
             System.out.println("No input provided.");
             dbCon.disconnect();
-            System.exit(-1);
+            System.exit(0);
         }
         scanner.nextLine();
 
