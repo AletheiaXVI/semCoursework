@@ -78,6 +78,7 @@ public class DatabaseConnection {
             }
         }
         System.err.println("Connection to database failed after " + retries + " attempts");
+        System.exit(-1);
     }
 
     /**

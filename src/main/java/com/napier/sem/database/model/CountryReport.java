@@ -49,13 +49,12 @@ public class CountryReport {
 
     @Override
     public String toString() {
-        return "CountryReport{" +
-                "code='" + code + '\'' +
+        return  "code='" + code + '\'' +
                 ", name='" + name + '\'' +
                 ", continent=" + continent + '\'' +
                 ", region='" + region + '\'' +
                 ", population=" + population +
                 ", capital=" + capital +
-                '}';
+                '\n';
     }
 }

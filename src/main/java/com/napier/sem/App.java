@@ -3,8 +3,8 @@ package com.napier.sem;
 public class App
 {
     /**
-     * Maib mwthos
-     * @param args command argumenta
+     * Main method
+     * @param args command arguments
      */
 
     public static void main(String[] args)

@@ -5,12 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Stream;
 
 import com.napier.sem.database.DatabaseConnection;
 import com.napier.sem.database.ObjectMapper;
-import com.napier.sem.database.model.Country;
+import com.napier.sem.database.model.CountryReport;
 
 
 /**
@@ -39,6 +38,24 @@ public class CSVExport {
     private static final String COMMA = ","; // Delimiter for separating fields in CSV
     private static final String DOUBLE_QUOTES = "\""; // Character used to enclose fields in CSV
     private static final String EMBEDDED_DOUBLE_QUOTES = "\"\""; // Escape sequence for quotes within a field
+
+    /**
+     * Formats CountryReport object into a string array to be outputted into a .CSV report
+     *
+     * @param country - instance of CountryReport
+     * @return the String array for use in writing to .CSV report
+     *
+     */
+    public static String[] countryReportToStringArray(CountryReport country) {
+        return new String[] {
+                country.getCode(),
+                country.getName(),
+                country.getContinent(),
+                country.getRegion(),
+                String.valueOf(country.getPopulation()),
+                String.valueOf(country.getCapital()),
+        };
+    }
 
     /**
      * Formats a field for CSV by adding quotes if it has special characters.
@@ -100,30 +117,11 @@ public class CSVExport {
 
         init(); // Connects to the database
 
-         // Converts a Country object to a String array suitable for CSV output
-        Function<Country, String[]> countryToStringArray = country -> new String[] {
-                country.getCode(),
-                country.getName(),
-                country.getContinent(),
-                country.getRegion(),
-                String.valueOf(country.getSurfaceArea()),
-                String.valueOf(country.getIndepYear()),
-                String.valueOf(country.getPopulation()),
-                String.valueOf(country.getLifeExpectancy()),
-                String.valueOf(country.getGnp()),
-                String.valueOf(country.getGnpOld()),
-                country.getLocalName(),
-                country.getGovernmentForm(),
-                country.getHeadOfState(),
-                String.valueOf(country.getCapital()),
-                country.getCode2()
-        };
-
-        List<Country> countries = objectMapper.getObjectsFromDatabase("SELECT * FROM country", Country::new);
+        List<CountryReport> countries = objectMapper.getObjectsFromDatabase("SELECT * FROM country", CountryReport::new);
 
         List<String[]> data = new ArrayList<>();
-        for (Country country : countries) {
-            data.add(countryToStringArray.apply(country));
+        for (CountryReport countryReport : countries) {
+            data.add(countryReportToStringArray(countryReport));
         }
 
         CSVExport writerCountry = new CSVExport();
