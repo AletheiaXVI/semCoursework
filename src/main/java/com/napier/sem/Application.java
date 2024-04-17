@@ -14,7 +14,8 @@ public class Application {
 
 
     private final DatabaseConnection dbCon = DatabaseConnection.from(
-            "jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
+            "jdbc:mysql://db:3306/world?useSSL=false",
+            //"jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
             "root",
             "example"
     );
