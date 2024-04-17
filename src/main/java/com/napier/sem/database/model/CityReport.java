@@ -42,11 +42,10 @@ public class CityReport {
 
     @Override
     public String toString() {
-        return "City{" +
-                ", name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", countryCode='" + country + '\'' +
                 ", district='" + district + '\'' +
                 ", population=" + population +
-                '}';
+                '\n';
     }
 }
