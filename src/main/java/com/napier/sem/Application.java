@@ -4,6 +4,7 @@ import com.napier.sem.database.DatabaseConnection;
 import com.napier.sem.database.ObjectMapper;
 import com.napier.sem.database.model.CapitalCityReport;
 import com.napier.sem.database.model.CountryLanguage;
+import com.napier.sem.database.model.CityReport;
 import com.napier.sem.database.model.Distinct;
 import com.napier.sem.database.model.CountryReport;
 
@@ -34,6 +35,10 @@ public class Application {
 
     private static List<CapitalCityReport> capitalCityReportOut(String query) {
         return objectMapper.getObjectsFromDatabase(query, CapitalCityReport::new);
+    }
+
+    private static List<CityReport> CityReportOut(String query) {
+        return objectMapper.getObjectsFromDatabase(query, CityReport::new);
     }
 
     /**
@@ -209,6 +214,116 @@ public class Application {
                     }
                 }
                 }
+            case 3: {
+                while (!exit) {
+                    List<CityReport> report;
+
+                    System.out.println("City Reports");
+                    System.out.println("1. Generate report for all cities");
+                    System.out.println("2. Generate report for all cities by continent ordered");
+                    System.out.println("3. Generate report for all cities by region");
+                    System.out.println("4. Generate report for all cities by country");
+                    System.out.println("5. Generate report for all cities by district");
+                    System.out.println("6. Generate top N populated cities in the world");
+                    System.out.println("7. Generate top N populated cities in a continent");
+                    System.out.println("8. Generate top N populated cities in a region");
+                    System.out.println("9. Generate top N populated cities in a country");
+                    System.out.println("10. Generate top N populated cities in a district");
+                    System.out.println("11. Exit");
+                    System.out.print("Enter your choice: ");
+                    choice = scanner.nextInt();
+                    scanner.nextLine(); // Consume newline left-over
+
+                    switch (choice) {
+                        case 1:
+                            //All the cities in the world organised by largest population to smallest.
+                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC"));
+                            System.out.println(report.toString());
+                            break;
+                        case 2:
+                            //All the cities in a continent organised by largest population to smallest.
+                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC"));
+                            System.out.println(report.toString());
+                            break;
+                        case 3:
+                            //All the cities in a region organised by largest population to smallest.
+                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.region ASC, city.population DESC"));
+                            System.out.println(report.toString());
+                            break;
+                        case 4:
+                            //All the cities in a country organised by largest population to smallest.
+                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.name ASC, city.population DESC"));
+                            System.out.println(report.toString());
+                            break;
+                        case 5:
+                            //All the cities in a district organised by largest population to smallest.
+                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.district ASC, city.population DESC"));
+                            System.out.println(report.toString());
+                            break;
+                        case 6:
+                            //The top N populated cities in the world where N is provided by the user.
+                            System.out.print("Please select N: ");
+                            n = scanner.nextInt();
+                            scanner.nextLine();
+                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC LIMIT " + n));
+                            System.out.println(report.toString());
+                            break;
+                        case 7:
+                            //The top N populated cities in a continent where N is provided by the user.
+                            System.out.print("Please select N: ");
+                            n = scanner.nextInt();
+                            scanner.nextLine();
+                            report = new ArrayList<>();
+                            for (Distinct continent : continents) {
+                                String continentName = continent.getName();
+                                report.addAll(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.continent = '" + continentName + "' AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT " + n));
+                            }
+                            System.out.println(report.toString());
+                            break;
+                        case 8:
+                            //The top N populated cities in a region where N is provided by the user.
+                            System.out.print("Please select N: ");
+                            n = scanner.nextInt();
+                            scanner.nextLine();
+                            report = new ArrayList<>();
+                            for (Distinct region : regions) {
+                                String regionName = region.getName();
+                                report.addAll(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = '" + regionName + "' AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT " + n));
+                            }
+                            System.out.println(report.toString());
+                            break;
+                        case 9:
+                            //The top N populated cities in a country where N is provided by the user.
+                            System.out.print("Please select N: ");
+                            n = scanner.nextInt();
+                            scanner.nextLine();
+                            report = new ArrayList<>();
+                            for (Distinct region : regions) {
+                                String regionName = region.getName();
+                                report.addAll(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = '" + regionName + "' AND country.code = city.countryCode ORDER BY country.name ASC, city.population DESC LIMIT " + n));
+                            }
+                            System.out.println(report.toString());
+                            break;
+                        case 10:
+                            //The top N populated cities in a district where N is provided by the user.
+                            System.out.print("Please select N: ");
+                            n = scanner.nextInt();
+                            scanner.nextLine();
+                            report = new ArrayList<>();
+                            for (Distinct region : regions) {
+                                String regionName = region.getName();
+                                report.addAll(CityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = '" + regionName + "' AND country.code = city.countryCode ORDER BY city.district ASC, city.population DESC LIMIT " + n));
+                            }
+                            System.out.println(report.toString());
+                            break;
+                        case 11:
+                            exit = true;
+                            break;
+                        default:
+                            System.out.println("Invalid choice. Please try again.");
+                    }
+                }
+            }
         }
         scanner.close();
         dbCon.disconnect();
