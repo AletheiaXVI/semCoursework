@@ -1,0 +1,36 @@
+name: Bug Report
+description: File a bug report.
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Description
+      description: Provide a clear description of the bug
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: Describe the intended behaviour.
+      placeholder: |
+        1. First run this..
+        2. With this setup..
+        3. In this environment...
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: Actual behaviour
+      description: Describe what actually has happened.
+  - type: textarea
+    id: other-information
+    attributes:
+      label: Additional Information
+      description: Any additional information that could be relevant.
