@@ -18,17 +18,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Determine Commit Hash
-        id: extract_commit_hash
-        run: echo "::set-output name=commit_hash::${GITHUB_SHA}"
-
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
-          tag_name: ${{ steps.extract_commit_hash.outputs.commit_hash }}
-          release_name: Release ${{ steps.extract_commit_hash.outputs.commit_hash }}
+          tag_name: ${{ github.event.pull_request.head.sha }}
+          release_name: Release ${{ github.event.pull_request.head.sha }}
           draft: false
           prerelease: false
