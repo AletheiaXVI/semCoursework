@@ -16,8 +16,8 @@ public class Application {
 
 
     private final DatabaseConnection dbCon = DatabaseConnection.from(
-            "jdbc:mysql://db:3306/world?useSSL=false",
-            //"jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
+            //"jdbc:mysql://db:3306/world?useSSL=false",
+            "jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
             "root",
             "example"
     );
@@ -48,14 +48,6 @@ public class Application {
     private static List<PopulationReport> PopulationReportOut(String query) {
         return objectMapper.getObjectsFromDatabase(query, PopulationReport::new);
     }
-
-public class Application {
-
-    private final DatabaseConnection dbCon = DatabaseConnection.from(
-            "jdbc:mysql://db:3306/world?useSSL=false",
-            "root",
-            "example"
-    );
 
     /**
      * Runs the application.
@@ -439,7 +431,4 @@ public class Application {
         scanner.close();
         dbCon.disconnect();
     }
-}
-
-
 }
