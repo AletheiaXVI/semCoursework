@@ -10,21 +10,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
+  build:
     name: Create Release
     runs-on: ubuntu-latest
-
     steps:
-      - name: Generate release tag
-        id: generate_release_tag
-        uses: amitsingh-007/next-release-tag@v5.0.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_template: 'yyyy.mm.dd.i'
-
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Create Release
-        uses: ncipollo/release-action@v1
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag: ${{ steps.generate_release_tag.outputs.next_release_tag }}
-          generateReleaseNotes: true
-          makeLatest: true
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
