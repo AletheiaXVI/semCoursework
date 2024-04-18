@@ -18,13 +18,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set Date
+        id: set_date
+        run: echo "::set-output name=date::$(date +'%d.%m.%y')"
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
-          tag_name: v${{ github.event.pull_request.head.sha }}
-          release_name: Release ${{ github.event.pull_request.head.sha }}
+          tag_name: v${{ steps.set_date.outputs.date }}
+          release_name: Release v${{ steps.set_date.outputs.date }}
           draft: false
           prerelease: false
