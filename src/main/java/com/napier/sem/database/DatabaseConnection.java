@@ -39,6 +39,10 @@ public class DatabaseConnection {
      * @return A new DatabaseConnection object
      */
     public static DatabaseConnection from(String dbUrl, String dbUser, String dbPassword) {
+        assert dbUrl != null : "Database URL cannot be null";
+        assert dbUser != null : "Database user cannot be null";
+        assert dbPassword != null : "Database password cannot be null";
+
         return new DatabaseConnection(dbUrl, dbUser, dbPassword);
     }
 
@@ -74,6 +78,8 @@ public class DatabaseConnection {
             }
         }
         System.err.println("Connection to database failed after " + retries + " attempts");
+        System.exit(-1);
+
     }
 
     /**
@@ -85,7 +91,9 @@ public class DatabaseConnection {
                 con.close();
                 System.out.println("Disconnected from database");
             }
-        } catch (SQLException e) {
+
+        } catch (SQLException | NullPointerException e) {
+
             System.err.println("Error closing connection: " + e.getMessage());
         }
     }

@@ -2,10 +2,11 @@ package com.napier.sem.test;
 
 import com.napier.sem.database.DatabaseConnection;
 import com.napier.sem.database.ObjectMapper;
-import com.napier.sem.database.model.City;
 import com.napier.sem.database.model.Country;
-import com.napier.sem.database.model.CountryLanguage;
+import com.napier.sem.database.model.City;
 import com.napier.sem.database.model.CountryReport;
+import com.napier.sem.database.model.CountryLanguage;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -32,6 +33,30 @@ public class SQLTests {
     static void tearDown() {
         dbCon.disconnect();
         objectMapper = null;
+    }
+
+    /**
+     * Tests making a connection to the database with a null URL, user, password, should throw an assertion error
+     */
+    @Test
+    void testAssertErrorDatabaseConnection() {
+        assertThrows(AssertionError.class, () -> DatabaseConnection.from(null, null, null));
+    }
+
+    /**
+     * Tests making a query to the database with a null query string, should throw an assertion error
+     */
+    @Test
+    void testAssertErrorObjectMapperList() {
+        assertThrows(AssertionError.class, () -> objectMapper.getObjectsFromDatabase(null, null));
+    }
+
+    /**
+     * Tests making a query to the database with a null query string, should throw an assertion error
+     */
+    @Test
+    void testAssertErrorObjectMapperObject() {
+        assertThrows(AssertionError.class, () -> objectMapper.getObjectFromDatabase(null, null));
     }
 
     /**
