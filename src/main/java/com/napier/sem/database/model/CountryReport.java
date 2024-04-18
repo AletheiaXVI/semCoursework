@@ -12,7 +12,7 @@ public class CountryReport {
     private final String continent;
     private final String region;
     private final int population;
-    private final int capital;
+    private final String capital;
 
     public CountryReport(ResultSet rs) {
         try {
@@ -21,7 +21,7 @@ public class CountryReport {
             this.continent = rs.getString("Continent");
             this.region = rs.getString("Region");
             this.population = rs.getInt("Population");
-            this.capital = rs.getInt("Capital");
+            this.capital = rs.getString("Capital");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -43,7 +43,7 @@ public class CountryReport {
         return population;
     }
 
-    public int getCapital() {
+    public String getCapital() {
         return capital;
     }
 
@@ -54,7 +54,7 @@ public class CountryReport {
                 ", continent=" + continent + '\'' +
                 ", region='" + region + '\'' +
                 ", population=" + population +
-                ", capital=" + capital +
-                '\n';
+                ", capital='" + capital +  '\''
+                +'\n';
     }
 }
