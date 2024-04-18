@@ -1,5 +1,7 @@
 package com.napier.sem;
 
+import java.sql.SQLException;
+
 public class App
 {
     /**
@@ -7,8 +9,7 @@ public class App
      * @param args command arguments
      */
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws SQLException {
         // Create our new Application and run it
         final Application app = new Application();
         app.run();
