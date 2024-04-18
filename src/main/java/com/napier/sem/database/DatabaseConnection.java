@@ -79,6 +79,7 @@ public class DatabaseConnection {
         }
         System.err.println("Connection to database failed after " + retries + " attempts");
         System.exit(-1);
+
     }
 
     /**
@@ -90,7 +91,9 @@ public class DatabaseConnection {
                 con.close();
                 System.out.println("Disconnected from database");
             }
+
         } catch (SQLException | NullPointerException e) {
+
             System.err.println("Error closing connection: " + e.getMessage());
         }
     }

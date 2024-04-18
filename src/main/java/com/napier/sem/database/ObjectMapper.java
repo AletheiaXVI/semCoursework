@@ -24,6 +24,7 @@ public class ObjectMapper {
      */
     public ObjectMapper(Connection connection) {
         assert connection != null : "Connection cannot be null";
+
         this.connection = connection;
     }
 
@@ -38,9 +39,11 @@ public class ObjectMapper {
      * @return The mapped object, or null if no rows were found or an error occurred.
      */
     public <T> T getObjectFromDatabase(String query, Function<ResultSet, T> mapper, Object... parameters) {
+
         assert parameters.length == 0 || query.contains("?") : "Number of parameters does not match number of placeholders";
         assert query != null : "Query cannot be null";
         assert mapper != null : "Mapper function cannot be null";
+
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             for (int i = 0; i < parameters.length; i++) {
@@ -72,6 +75,7 @@ public class ObjectMapper {
         assert parameters.length == 0 || query.contains("?") : "Number of parameters does not match number of placeholders";
         assert query != null : "Query cannot be null";
         assert mapper != null : "Mapper function cannot be null";
+
 
         List<T> objects = new ArrayList<>();
         try (PreparedStatement statement = connection.prepareStatement(query)) {

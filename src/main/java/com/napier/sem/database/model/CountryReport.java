@@ -14,6 +14,7 @@ public class CountryReport {
     private final int population;
     private final String capital;
 
+
     public CountryReport(ResultSet rs) {
         try {
             this.code = rs.getString("Code");
@@ -22,6 +23,7 @@ public class CountryReport {
             this.region = rs.getString("Region");
             this.population = rs.getInt("Population");
             this.capital = rs.getString("Capital");
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -43,13 +45,16 @@ public class CountryReport {
         return population;
     }
 
+
     public String getCapital() {
+
         return capital;
     }
 
     @Override
     public String toString() {
         return  "code='" + code + '\'' +
+
                 ", name='" + name + '\'' +
                 ", continent=" + continent + '\'' +
                 ", region='" + region + '\'' +

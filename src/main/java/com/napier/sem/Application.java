@@ -49,6 +49,14 @@ public class Application {
         return objectMapper.getObjectsFromDatabase(query, PopulationReport::new);
     }
 
+public class Application {
+
+    private final DatabaseConnection dbCon = DatabaseConnection.from(
+            "jdbc:mysql://db:3306/world?useSSL=false",
+            "root",
+            "example"
+    );
+
     /**
      * Runs the application.
      */
@@ -431,4 +439,7 @@ public class Application {
         scanner.close();
         dbCon.disconnect();
     }
+}
+
+
 }
