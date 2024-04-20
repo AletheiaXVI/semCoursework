@@ -7,7 +7,6 @@ import com.napier.sem.database.model.*;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.List;
@@ -15,44 +14,15 @@ import java.util.List;
 public class Application {
 
 
-    private final DatabaseConnection dbCon = DatabaseConnection.from(
-            "jdbc:mysql://db:3306/world?useSSL=false",
-            //"jdbc:mysql://localhost:33060/world?allowPublicKeyRetrieval=true&useSSL=false",
-            "root",
-            "example"
-    );
-
-    private static ObjectMapper objectMapper; // Object mapper for interacting with the database
-
-    /**
-     * @param query query for accessing information from the country table with specific fields for report purposes
-     * @return List of CountryReport objects for use in report generation
-     */
-
-    private static List<CountryReport> countryReportOut(String query) {
-        return objectMapper.getObjectsFromDatabase(query, CountryReport::new);
-    }
-
-    private static List<CapitalCityReport> capitalCityReportOut(String query) {
-        return objectMapper.getObjectsFromDatabase(query, CapitalCityReport::new);
-    }
-
-    private static List<CityReport> CityReportOut(String query) {
-        return objectMapper.getObjectsFromDatabase(query, CityReport::new);
-    }
-
-    private static List<LanguageReport> LanguageReportOut(String query) {
-        return objectMapper.getObjectsFromDatabase(query, LanguageReport::new);
-    }
-
-    private static List<PopulationReport> PopulationReportOut(String query) {
-        return objectMapper.getObjectsFromDatabase(query, PopulationReport::new);
-    }
-
     /**
      * Runs the application.
      */
     public void run() throws SQLException {
+        DatabaseConnection dbCon = DatabaseConnection.from(
+                "jdbc:mysql://db:3306/world?useSSL=false",
+                "root",
+                "example"
+        );
         dbCon.connect();
 
         // makes a connection to database then executes a statement to allow GROUP BY's to work with multiple concatenated fields
@@ -62,7 +32,7 @@ public class Application {
         statement.close();
 
 
-        objectMapper = new ObjectMapper(dbCon.getConnection());
+        ObjectMapper objectMapper = new ObjectMapper(dbCon.getConnection());
 
         // 4 lists of distinct continents, regions, countries & districts for use in queries
         List<Distinct> continents = objectMapper.getObjectsFromDatabase("SELECT DISTINCT continent FROM country ORDER BY continent ASC", rs -> new Distinct(rs, "Continent"));
@@ -73,7 +43,7 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         int choice = 0;
-        int n;
+        int input;
 
         System.out.println("What type of report would you like?");
         System.out.println("1. Country Report");
@@ -95,7 +65,6 @@ public class Application {
         switch (choice) {
             case 1: {
                 while (!exit) {
-                    List<CountryReport> report;
 
                     System.out.println("Country Reports");
                     System.out.println("1. Generate report for all countries");
@@ -111,66 +80,73 @@ public class Application {
                     scanner.nextLine(); // Consume newline left-over
 
                     switch (choice) {
-                        case 1:
-                            //All the countries in the world organised by largest population to smallest.
-                            report = new ArrayList<>(countryReportOut("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY population DESC"));
-                            System.out.println(report.toString());
-                            break;
-                        case 2:
-                            //All the countries in a continent organised by largest population to smallest.
-                            report = new ArrayList<>(countryReportOut("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY continent ASC, population DESC"));
-                            System.out.println(report.toString());
-                            break;
-                        case 3:
-                            //All the countries in a region organised by largest population to smallest.
-                            report = new ArrayList<>(countryReportOut("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY region ASC, population DESC"));
-                            System.out.println(report.toString());
-                            break;
-                        case 4:
-                            //The top N populated countries in the world where N is provided by the user.
+
+                        // All the countries in the world organised by largest population to smallest.
+                        case 1 -> {
+                            List<CountryReport> countryReport = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY population DESC", CountryReport::new);
+                            System.out.println(countryReport);
+                        }
+
+                        //All the countries in a continent organised by largest population to smallest.
+                        case 2 -> {
+                            List<CountryReport> countriesByContinent = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY continent ASC, population DESC", CountryReport::new);
+                            System.out.println(countriesByContinent);
+                        }
+
+                        //All the countries in a region organised by largest population to smallest.
+                        case 3 -> {
+                            List<CountryReport> countriesByRegion = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY region ASC, population DESC", CountryReport::new);
+                            System.out.println(countriesByRegion);
+                        }
+
+                        //The top N populated countries in the world where N is provided by the user.
+                        case 4 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>(countryReportOut("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY population DESC LIMIT " + n));
-                            System.out.println(report.toString());
-                            break;
-                        case 5:
-                            //The top N populated countries in a continent where N is provided by the user.
+                            List<CountryReport> countryReports = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id ORDER BY population DESC LIMIT ?", CountryReport::new, input);
+                            System.out.println(countryReports);
+                        }
+
+                        //The top N populated countries in a continent where N is provided by the user.
+                        case 5 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct continent : continents) {
-                                String continentName = continent.getName();
-                                report.addAll(countryReportOut("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND continent = '" + continentName + "'  ORDER BY continent ASC, population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
-                        case 6:
-                            //The top N populated countries in a region where N is provided by the user.
+
+                            int finalN = input; // lazy loading of final variable
+                            continents.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(continentName -> {
+                                        List<CountryReport> report = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND continent = '?'  ORDER BY continent ASC, population DESC LIMIT ?", CountryReport::new, continentName, finalN);
+                                        System.out.println(report);
+                                    });
+
+                        }
+
+                        //The top N populated countries in a region where N is provided by the user.
+                        case 6 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct region : regions) {
-                                String regionName = region.getName();
-                                report.addAll(countryReportOut("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND region = '" + regionName + "'  ORDER BY region ASC, population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
-                        case 7:
-                            exit = true;
-                            break;
-                        default:
-                            System.out.println("Invalid choice. Please try again.");
+
+                            int finalN = input; // lazy loading of final variable
+                            regions.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(regionName -> {
+                                        List<CountryReport> report = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND region = '?'  ORDER BY region ASC, population DESC LIMIT ?", CountryReport::new, regionName, finalN);
+                                        System.out.println(report);
+                                    });
+
+                        }
+                        case 7 -> exit = true;
+                        default -> System.out.println("Invalid choice. Please try again.");
                     }
                 }
             }
 
             case 2: {
                 while (!exit) {
-                    List<CapitalCityReport> report;
-
                     System.out.println("Capital City Reports");
                     System.out.println("1. Generate report for all capital cities");
                     System.out.println("2. Generate report for all capital cities by continent");
@@ -184,58 +160,65 @@ public class Application {
                     scanner.nextLine(); // Consume newline left-over
 
                     switch (choice) {
-                        case 1:
-                            //All the capital cities in the world organised by largest population to smallest.
-                            report = new ArrayList<>(capitalCityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
-                        case 2:
-                            //All the capital cities in a continent organised by largest population to smallest.
-                            report = new ArrayList<>(capitalCityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
-                        case 3:
-                            //All the capital cities in a region organised by largest population to smallest.
-                            report = new ArrayList<>(capitalCityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.region ASC, city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
-                        case 4:
-                            //The top N populated capital cities in the world where N is provided by the user.
+
+                        //All the capital cities in the world organised by largest population to smallest.
+                        case 1 -> {
+                            List<CapitalCityReport> cityReport = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC", CapitalCityReport::new);
+                            System.out.println(cityReport);
+                        }
+
+                        //All the capital cities in a continent organised by largest population to smallest.
+                        case 2 -> {
+                            List<CapitalCityReport> cityReport = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC", CapitalCityReport::new);
+                            System.out.println(cityReport);
+                        }
+
+                        //All the capital cities in a region organised by largest population to smallest.
+                        case 3 -> {
+                            List<CapitalCityReport> cityReport = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.region ASC, city.population DESC", CapitalCityReport::new);
+                            System.out.println(cityReport);
+                        }
+
+                        //The top N populated capital cities in the world where N is provided by the user.
+                        case 4 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>(capitalCityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC LIMIT " + n));
-                            System.out.println(report.toString());
-                            break;
-                        case 5:
-                            //The top N populated capital cities in a continent where N is provided by the user.
+                            List<CapitalCityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC LIMIT ?", CapitalCityReport::new, input);
+                            System.out.println(cityReports);
+                        }
+
+                        //The top N populated capital cities in a continent where N is provided by the user.
+                        case 5 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct continent : continents) {
-                                String continentName = continent.getName();
-                                report.addAll(capitalCityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.continent = '" + continentName + "' AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
-                        case 6:
-                            //The top N populated capital cities in a region where N is provided by the user.
+
+                            int finalN = input; // lazy loading of final variable
+                            continents.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(continentName -> {
+                                        List<CapitalCityReport> report = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.continent = '?' AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT ?", CapitalCityReport::new, continentName, finalN);
+                                        System.out.println(report);
+                                    });
+                        }
+
+                        //The top N populated capital cities in a region where N is provided by the user.
+                        case 6 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct region : regions) {
-                                String regionName = region.getName();
-                                report.addAll(capitalCityReportOut("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = '" + regionName + "' AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
-                        case 7:
-                            exit = true;
-                            break;
-                        default:
-                            System.out.println("Invalid choice. Please try again.");
+
+                            int finalN = input; // lazy loading of final variable
+                            regions.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(regionName -> {
+                                        List<CapitalCityReport> report = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = '?' AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT ?", CapitalCityReport::new, regionName, finalN);
+                                        System.out.println(report);
+                                    });
+                        }
+                        case 7 -> exit = true;
+                        default -> System.out.println("Invalid choice. Please try again.");
                     }
                 }
             }
@@ -261,112 +244,110 @@ public class Application {
                     scanner.nextLine(); // Consume newline left-over
 
                     switch (choice) {
-                        case 1:
-                            //All the cities in the world organised by largest population to smallest.
-                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
 
-                        case 2:
-                            //All the cities in a continent organised by largest population to smallest.
-                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
+                        //All the cities in the world organised by largest population to smallest.
+                        case 1 -> {
+                            List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC", CityReport::new);
+                            System.out.println(cityReports);
+                        }
 
-                        case 3:
-                            //All the cities in a region organised by largest population to smallest.
-                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.region ASC, city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
+                        //All the cities in a continent organised by largest population to smallest.
+                        case 2 -> {
+                            List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC", CityReport::new);
+                            System.out.println(cityReports);
+                        }
 
-                        case 4:
-                            //All the cities in a country organised by largest population to smallest.
-                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.name ASC, city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
+                        //All the cities in a region organised by largest population to smallest.
+                        case 3 -> {
+                            List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.region ASC, city.population DESC", CityReport::new);
+                            System.out.println(cityReports);
+                        }
 
-                        case 5:
-                            //All the cities in a district organised by largest population to smallest.
-                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.district ASC, city.population DESC"));
-                            System.out.println(report.toString());
-                            break;
+                        //All the cities in a country organised by largest population to smallest.
+                        case 4 -> {
+                            List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY country.name ASC, city.population DESC", CityReport::new);
+                            System.out.println(cityReports);
+                        }
 
-                        case 6:
-                            //The top N populated cities in the world where N is provided by the user.
+                        //All the cities in a district organised by largest population to smallest.
+                        case 5 -> {
+                            List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.district ASC, city.population DESC", CityReport::new);
+                            System.out.println(cityReports);                        }
+
+                        //The top N populated cities in the world where N is provided by the user.
+                        case 6 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC LIMIT " + n));
-                            System.out.println(report.toString());
-                            break;
+                            List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC LIMIT ?", CityReport::new, input);
+                            System.out.println(cityReports);                        }
 
-                        case 7:
-                            //The top N populated cities in a continent where N is provided by the user.
+                        //The top N populated cities in a continent where N is provided by the user.
+                        case 7 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct continent : continents) {
-                                String continentName = continent.getName();
-                                report.addAll(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.continent = '" + continentName + "' AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
 
-                        case 8:
-                            //The top N populated cities in a region where N is provided by the user.
+                            int finalInput = input; // lazy loading of final variable
+                            continents.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(continentName -> {
+                                        List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.continent = '?' AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT ?", CityReport::new, continentName, finalInput);
+                                        System.out.println(cityReports);
+                                    });
+                        }
+
+                        //The top N populated cities in a region where N is provided by the user.
+                        case 8 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            // Goes through a list of regions and runs a query against one to get an independent set of results based on N
-                            for (Distinct region : regions) {
-                                String regionName = region.getName();
-                                report.addAll(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.region = '" + regionName + "' AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
 
-                        case 9:
-                            //The top N populated cities in a country where N is provided by the user.
+                            int finalInput = input; // lazy loading of final variable
+                            regions.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(regionName -> {
+                                        List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.region = '?' AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT ?", CityReport::new, regionName, finalInput);
+                                        System.out.println(cityReports);
+                                    });
+                        }
+
+                        //The top N populated cities in a country where N is provided by the user.
+                        case 9 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct country : countries) {
-                                String countryName = country.getName();
-                                report.addAll(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.name = '" + countryName + "' AND country.code = city.countryCode ORDER BY 'country' ASC, city.population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
 
-                        case 10:
-                            //The top N populated cities in a district where N is provided by the user.
+                            int finalInput = input; // lazy loading of final variable
+                            countries.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(countryName -> {
+                                        List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE country.name = '?' AND country.code = city.countryCode ORDER BY 'country' ASC, city.population DESC LIMIT ?", CityReport::new, countryName, finalInput);
+                                        System.out.println(cityReports);
+                                    });
+                        }
+
+                        //The top N populated cities in a district where N is provided by the user.
+                        case 10 -> {
                             System.out.print("Please select N: ");
-                            n = scanner.nextInt();
+                            input = scanner.nextInt();
                             scanner.nextLine();
-                            report = new ArrayList<>();
-                            for (Distinct district : districts) {
-                                String districtName = district.getName();
-                                report.addAll(CityReportOut("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE city.district = '" + districtName + "' AND country.code = city.countryCode ORDER BY city.district ASC, city.population DESC LIMIT " + n));
-                            }
-                            System.out.println(report.toString());
-                            break;
 
-                        case 11:
-                            exit = true;
-                            break;
-
-                        default:
-                            System.out.println("Invalid choice. Please try again.");
+                            int finalInput = input; // lazy loading of final variable
+                            districts.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(districtName -> {
+                                        List<CityReport> cityReports = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country, city.district, city.population FROM country, city WHERE city.district = '?' AND country.code = city.countryCode ORDER BY city.district ASC, city.population DESC LIMIT ?", CityReport::new, districtName, finalInput);
+                                        System.out.println(cityReports);
+                                    });
+                        }
+                        case 11 -> exit = true;
+                        default -> System.out.println("Invalid choice. Please try again.");
                     }
                 }
             }
             case 4: {
                 while (!exit) {
-                    List<LanguageReport> languageReport;
-                    List<PopulationReport> populationReport;
-
                     System.out.println("Population Reports");
                     System.out.println("1. Generate report for number & % of people livings in cities (or not living in cities) in a continent");
                     System.out.println("2. Generate report for number & % of people livings in cities (or not living in cities) in a region");
@@ -379,32 +360,34 @@ public class Application {
 
                     switch (choice) {
 
-                        case 1:
-                            populationReport = new ArrayList<>();
-                            for (Distinct continent : continents) {
-                                String continentName = continent.getName();
-                                populationReport.addAll(PopulationReportOut(""));
-                            }
-                            System.out.println(populationReport);
-                            break;
+                        case 1 -> {
+                            continents.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(continentName -> {
+                                        List<PopulationReport> report = objectMapper.getObjectsFromDatabase("TODO", PopulationReport::new);
+                                        System.out.println(report);
+                                    });
+                        }
 
-                        case 2:
-                            populationReport = new ArrayList<>();
-                            for (Distinct region : regions) {
-                                String regionName = region.getName();
-                                populationReport.addAll(PopulationReportOut(""));
-                            }
-                            break;
+                        case 2 -> {
+                            regions.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(regionName -> {
+                                        List<PopulationReport> report = objectMapper.getObjectsFromDatabase("TODO", PopulationReport::new);
+                                        System.out.println(report);
+                                    });
+                        }
 
-                        case 3:
-                            populationReport = new ArrayList<>();
-                            for (Distinct country : countries) {
-                                String regionName = country.getName();
-                                populationReport.addAll(PopulationReportOut(""));
-                            }
-                            break;
+                        case 3 -> {
+                            countries.stream()
+                                    .map(Distinct::getName)
+                                    .forEach(countryName -> {
+                                        List<PopulationReport> report = objectMapper.getObjectsFromDatabase("TODO", PopulationReport::new);
+                                        System.out.println(report);
+                                    });
+                        }
 
-                        case 4:
+                        case 4 -> {
                             // this query uses a subquery using group by to get the five major languages percentage and population
                             // percentage equation is (country population * (language percentage/100) / world Population) * 100
                             // population equation is country population * (language percentage/100)
@@ -417,17 +400,17 @@ public class Application {
                                     "WHERE cl.Language IN ('Chinese', 'English', 'Hindi', 'Spanish', 'Arabic') " +
                                     "GROUP BY cl.Language " +
                                     "ORDER BY Percentage DESC;";
-                            languageReport = new ArrayList<>(LanguageReportOut(query));
-                            System.out.println(languageReport.toString());
-                            break;
+                            List<LanguageReport> languageReport = objectMapper.getObjectsFromDatabase(query, LanguageReport::new);
+                            System.out.println(languageReport);
+                        }
 
-                        case 5:
-                            exit = true;
-                            break;
+                        case 5 -> exit = true;
                     }
                 }
             }
         }
+
+        // cleanup
         scanner.close();
         dbCon.disconnect();
     }
