@@ -60,7 +60,6 @@ public class CSVTests {
 
         File file = new File(fileName);
         Files.readAllLines(file.toPath()).forEach(System.out::println);
-        assertTrue(file.exists());
     }
 
     /**
