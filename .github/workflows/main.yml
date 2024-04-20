@@ -19,7 +19,7 @@ jobs:
         run: |
           docker build -t database ./db 
           docker run --name db -dp 33060:3306 database
-          mvn -Dtest=com.napier.sem.test.SQLTests test
+          mvn test
           docker stop db
           docker rm db
   build:
