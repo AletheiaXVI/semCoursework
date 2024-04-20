@@ -3,6 +3,9 @@ name: CI
 on:
   push:
 
+  workflow_dispatch:
+
+
 jobs:
   UnitTests:
     name: Unit Tests
@@ -19,14 +22,13 @@ jobs:
         run: |
           docker build -t database ./db 
           docker run --name db -dp 33060:3306 database
-          mvn -Dtest=com.napier.sem.test.SQLTests test
+          mvn test
           docker stop db
           docker rm db
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
       - name: Set up JDK 20
