@@ -1,35 +1,36 @@
 @startuml
 skinparam linetype ortho
 skinparam actorStyle awesome
+skinparam nodesep 20
 
 actor DataAnalyst as DA
 
 rectangle "Generate Reports" {
- usecase (Generate World Report) as UC1
- usecase (Generate Continent Report) as UC2
- usecase (Generate Region Report) as UC3
- usecase (Generate Top N Reports) as UC4
+    usecase (Generate World Report) as UC1
+    usecase (Generate Continent Report) as UC2
+    usecase (Generate Region Report) as UC3
+    usecase (Generate Top N Reports) as UC4
 }
 
 rectangle "City Reports" {
- usecase (Generate World Cities Report) as UC5
- usecase (Generate Continent Cities Report) as UC6
- usecase (Generate Region Cities Report) as UC7
- usecase (Generate Country Cities Report) as UC8
- usecase (Generate District Cities Report) as UC9
- usecase (Generate Top N City Reports) as UC10
+    usecase (Generate World Cities Report) as UC5
+    usecase (Generate Continent Cities Report) as UC6
+    usecase (Generate Region Cities Report) as UC7
+    usecase (Generate Country Cities Report) as UC8
+    usecase (Generate District Cities Report) as UC9
+    usecase (Generate Top N City Reports) as UC10
 }
 
 rectangle "View and Filter Information" {
- usecase (View Capital City Information) as UC11
- usecase (Filter By Continent) as UC12
- usecase (Filter By Region) as UC13
- usecase (Display Top N Cities) as UC14
+    usecase (View Capital City Information) as UC11
+    usecase (Filter By Continent) as UC12
+    usecase (Filter By Region) as UC13
+    usecase (Display Top N Cities) as UC14
 }
 
 rectangle "Geographic and Language Information" {
- usecase (View Geographic Area Information) as UC15
- usecase (Display Language Distribution) as UC16
+    usecase (View Geographic Area Information) as UC15
+    usecase (Display Language Distribution) as UC16
 }
 
 note "Reports contain Country Code, Name, Continent, Region, Population & Capital, City name, Country, District & Population, each capital cities Name, Country, Population, geographic area name, total population, urban/rural percentages, and language distribution" as Note1
@@ -51,26 +52,28 @@ DA --> UC14
 DA --> UC15
 DA --> UC16
 
-UC1 ..> UC17 : Export
-UC2 ..> UC17 : Export
-UC3 ..> UC17 : Export
-UC4 ..> UC17 : Export
-UC5 ..> UC17 : Export
-UC6 ..> UC17 : Export
-UC7 ..> UC17 : Export
-UC8 ..> UC17 : Export
-UC9 ..> UC17 : Export
-UC10 ..> UC17 : Export
-UC11 ..> UC17 : Export
-UC12 ..> UC17 : Export
-UC13 ..> UC17 : Export
-UC14 ..> UC17 : Export
-UC15 ..> UC17 : Export
-UC16 ..> UC17 : Export
+usecase (Export) as UC17
 
-legend right
- Short
- legend
-endlegend
+UC1 ..> UC17
+UC2 ..> UC17
+UC3 ..> UC17
+UC4 ..> UC17
+UC5 ..> UC17
+UC6 ..> UC17
+UC7 ..> UC17
+UC8 ..> UC17
+UC9 ..> UC17
+UC10 ..> UC17
+UC11 ..> UC17
+UC12 ..> UC17
+UC13 ..> UC17
+UC14 ..> UC17
+UC15 ..> UC17
+UC16 ..> UC17
+
 
 @enduml
+
+
+
+
