@@ -1,34 +1,35 @@
 @startuml
+skinparam linetype ortho
 skinparam actorStyle awesome
 
 actor DataAnalyst as DA
 
 rectangle "Generate Reports" {
-  usecase (Generate World Report) as UC1
-  usecase (Generate Continent Report) as UC2
-  usecase (Generate Region Report) as UC3
-  usecase (Generate Top N Reports) as UC4
+ usecase (Generate World Report) as UC1
+ usecase (Generate Continent Report) as UC2
+ usecase (Generate Region Report) as UC3
+ usecase (Generate Top N Reports) as UC4
 }
 
 rectangle "City Reports" {
-  usecase (Generate World Cities Report) as UC5
-  usecase (Generate Continent Cities Report) as UC6
-  usecase (Generate Region Cities Report) as UC7
-  usecase (Generate Country Cities Report) as UC8
-  usecase (Generate District Cities Report) as UC9
-  usecase (Generate Top N City Reports) as UC10
+ usecase (Generate World Cities Report) as UC5
+ usecase (Generate Continent Cities Report) as UC6
+ usecase (Generate Region Cities Report) as UC7
+ usecase (Generate Country Cities Report) as UC8
+ usecase (Generate District Cities Report) as UC9
+ usecase (Generate Top N City Reports) as UC10
 }
 
 rectangle "View and Filter Information" {
-  usecase (View Capital City Information) as UC11
-  usecase (Filter By Continent) as UC12
-  usecase (Filter By Region) as UC13
-  usecase (Display Top N Cities) as UC14
+ usecase (View Capital City Information) as UC11
+ usecase (Filter By Continent) as UC12
+ usecase (Filter By Region) as UC13
+ usecase (Display Top N Cities) as UC14
 }
 
 rectangle "Geographic and Language Information" {
-  usecase (View Geographic Area Information) as UC15
-  usecase (Display Language Distribution) as UC16
+ usecase (View Geographic Area Information) as UC15
+ usecase (Display Language Distribution) as UC16
 }
 
 note "Reports contain Country Code, Name, Continent, Region, Population & Capital, City name, Country, District & Population, each capital cities Name, Country, Population, geographic area name, total population, urban/rural percentages, and language distribution" as Note1
@@ -66,5 +67,10 @@ UC13 ..> UC17 : Export
 UC14 ..> UC17 : Export
 UC15 ..> UC17 : Export
 UC16 ..> UC17 : Export
+
+legend right
+ Short
+ legend
+endlegend
 
 @enduml
