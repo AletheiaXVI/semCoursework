@@ -53,6 +53,7 @@ public class Application {
         MDExport mdExportCapitals = new MDExport("capitalReports.md");
         MDExport mdExportCities = new MDExport("cityReports.md");
         MDExport mdExportPopulation = new MDExport("populationReports.md");
+        MDExport mdExportLanguage = new MDExport("languageReport.md");
 
         System.out.println("Outputting Reports");
 
@@ -133,7 +134,7 @@ public class Application {
                         report.getContinent(),
                         report.getRegion(),
                         String.valueOf(report.getPopulation()),
-                        report.getCapital()
+                        report.getCapital() + '\\'
                 })
                 .collect(Collectors.toList());
 
@@ -191,7 +192,7 @@ public class Application {
                 .map(report -> new String[]{
                         report.getCapital(),
                         report.getName(),
-                        String.valueOf(report.getPopulation())
+                        String.valueOf(report.getPopulation()) + '\\'
                 })
                 .collect(Collectors.toList());
 
@@ -278,7 +279,7 @@ public class Application {
                         report.getName(),
                         report.getCountry(),
                         report.getDistrict(),
-                        String.valueOf(report.getPopulation()),
+                        String.valueOf(report.getPopulation()) + '\\',
                 })
                 .collect(Collectors.toList());
 
@@ -291,6 +292,8 @@ public class Application {
         }
 
         System.out.println("Population Reports");
+
+        List<PopulationReport> populationReports = new ArrayList<>();
 
         String populationContinentQuery = "SELECT country.continent AS name, " +
                 "SUM(country.population) as population, " +
@@ -306,6 +309,7 @@ public class Application {
                 .map(Distinct::getName)
                 .forEach(continentName -> {
                     List<PopulationReport> report = objectMapper.getObjectsFromDatabase(populationContinentQuery, PopulationReport::new, continentName, continentName, continentName);
+                    populationReports.addAll(report);
                     //System.out.println(report);
                 });
 
@@ -323,6 +327,7 @@ public class Application {
                 .map(Distinct::getName)
                 .forEach(regionName -> {
                     List<PopulationReport> report = objectMapper.getObjectsFromDatabase(populationRegionQuery, PopulationReport::new, regionName, regionName, regionName);
+                    populationReports.addAll(report);
                     //System.out.println(report);
                 });
 
@@ -340,8 +345,22 @@ public class Application {
                 .map(Distinct::getName)
                 .forEach(countryName -> {
                     List<PopulationReport> report = objectMapper.getObjectsFromDatabase(populationCountryQuery, PopulationReport::new, countryName, countryName, countryName);
+                    populationReports.addAll(report);
                     //System.out.println(report);
                 });
+
+        List<String[]> PopulationDataForMD = populationReports.stream()
+                .map(report -> new String[]{
+                        report.toString() + '\\',
+                })
+                .collect(Collectors.toList());
+
+        try {
+            mdExportPopulation.writeToMD(PopulationDataForMD);
+            System.out.println("Population reports exported successfully.");
+        } catch (IOException e) {
+            System.err.println("Error exporting population reports to Markdown file: " + e.getMessage());
+        }
 
         // this query uses a sub-query using group by to get the five major languages percentage and population
         // percentage equation is (country population * (language percentage/100) / world Population) * 100
@@ -358,24 +377,23 @@ public class Application {
         //System.out.println(languageReport);
 
         // Combine all reports into a single list
-        List<LanguageReport> combinedPopulationReports = new ArrayList<>();
-        combinedPopulationReports.addAll(languageReport);
+
 
         // Convert combined reports to Markdown format
-        List<String[]> combinedPopulationDataForMD = combinedPopulationReports.stream()
+        List<String[]> LanguageDataForMD = languageReport.stream()
                 .map(report -> new String[]{
                         report.getLanguage(),
                         String.valueOf(report.getPercentage()),
-                        String.valueOf(report.getPopulation()),
+                        String.valueOf(report.getPopulation()) + '\\',
                 })
                 .collect(Collectors.toList());
 
         // Attempt to write the combined data to a Markdown file
         try {
-            mdExportPopulation.writeToMD(combinedPopulationDataForMD);
-            System.out.println("All population reports exported successfully.");
+            mdExportLanguage.writeToMD(LanguageDataForMD);
+            System.out.println("Language report exported successfully.");
         } catch (IOException e) {
-            System.err.println("Error exporting all population reports to Markdown file: " + e.getMessage());
+            System.err.println("Error exporting language report to Markdown file: " + e.getMessage());
         }
 
         // cleanup

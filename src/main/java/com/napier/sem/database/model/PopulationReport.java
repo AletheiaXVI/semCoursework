@@ -41,7 +41,7 @@ public class PopulationReport {
                 ", population=" + population +
                 ", city population=" + cityPopulation +
                 ", city percentage=" + cityPercentage + "%" +
-                ", rural percentage=" + ruralPopulation +
+                ", rural population=" + ruralPopulation +
                 ", rural percentage=" + ruralPercentage + "%" +
                 '\n';
     }
