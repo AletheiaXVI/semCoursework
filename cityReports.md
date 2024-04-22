@@ -20394,3 +20394,1631 @@ Zürich | Switzerland | Zürich | 336800\
 Zytomyr | Ukraine | Zytomyr | 297000\
 Berdytšiv | Ukraine | Zytomyr | 90000\
 Mumbai (Bombay) | India | Maharashtra | 10500000\
+Mumbai (Bombay) | India | Maharashtra | 10500000\
+Moscow | Russian Federation | Moscow (City) | 8389200\
+Ciudad de México | Mexico | Distrito Federal | 8591309\
+Cairo | Egypt | Kairo | 6789479\
+Sydney | Australia | New South Wales | 3276207\
+São Paulo | Brazil | São Paulo | 9968485\
+Sydney | Australia | New South Wales | 3276207\
+Riga | Latvia | Riika | 764328\
+London | United Kingdom | England | 7285000\
+La Habana | Cuba | La Habana | 2256000\
+Kinshasa | Congo, The Democratic Republic of the | Kinshasa | 5064000\
+Ciudad de México | Mexico | Distrito Federal | 8591309\
+Addis Abeba | Ethiopia | Addis Abeba | 2495000\
+Seoul | South Korea | Seoul | 9981619\
+Moscow | Russian Federation | Moscow (City) | 8389200\
+Port Moresby | Papua New Guinea | National Capital Dis | 247000\
+Dalap-Uliga-Darrit | Marshall Islands | Majuro | 28000\
+Istanbul | Turkey | Istanbul | 8787958\
+Stockholm | Sweden | Lisboa | 750348\
+New York | United States | New York | 8008278\
+Cairo | Egypt | Kairo | 6789479\
+Apia | Samoa | Upolu | 35900\
+São Paulo | Brazil | São Paulo | 9968485\
+Jakarta | Indonesia | Jakarta Raya | 9604900\
+Cape Town | South Africa | Western Cape | 2352121\
+Mumbai (Bombay) | India | Maharashtra | 10500000\
+Madrid | Spain | Madrid | 2879052\
+Abidjan | Côte d’Ivoire | Abidjan | 2500000\
+Berlin | Germany | Berliini | 3386667\
+Oranjestad | Aruba | – | 29034\
+Kabul | Afghanistan | Kabol | 1780000\
+Luanda | Angola | Luanda | 2022000\
+South Hill | Anguilla | – | 961\
+Tirana | Albania | Tirana | 270000\
+Andorra la Vella | Andorra | Andorra la Vella | 21189\
+Willemstad | Netherlands Antilles | Curaçao | 2345\
+Dubai | United Arab Emirates | Dubai | 669181\
+Buenos Aires | Argentina | Distrito Federal | 2982146\
+Yerevan | Armenia | Yerevan | 1248700\
+Tafuna | American Samoa | Tutuila | 5200\
+Saint John´s | Antigua and Barbuda | St John | 24000\
+Sydney | Australia | New South Wales | 3276207\
+Wien | Austria | Wien | 1608144\
+Bakı | Azerbaijan | Bakı | 1787800\
+Bujumbura | Burundi | Bujumbura | 300000\
+Antwerpen | Belgium | Antwerpen | 446525\
+Cotonou | Benin | Atlantique | 536827\
+Ouagadougou | Burkina Faso | Kadiogo | 824000\
+Dhaka | Bangladesh | Dhaka | 3612850\
+Sofija | Bulgaria | Grad Sofija | 1122302\
+al-Manama | Bahrain | al-Manama | 148000\
+Nassau | Bahamas | New Providence | 172000\
+Sarajevo | Bosnia and Herzegovina | Federaatio | 360000\
+Minsk | Belarus | Horad Minsk | 1674000\
+Belize City | Belize | Belize City | 55810\
+Saint George | Bermuda | Saint George´s | 1800\
+Santa Cruz de la Sierra | Bolivia | Santa Cruz | 935361\
+São Paulo | Brazil | São Paulo | 9968485\
+Bridgetown | Barbados | St Michael | 6070\
+Bandar Seri Begawan | Brunei | Brunei and Muara | 21484\
+Thimphu | Bhutan | Thimphu | 22000\
+Gaborone | Botswana | Gaborone | 213017\
+Bangui | Central African Republic | Bangui | 524000\
+Montréal | Canada | Québec | 1016376\
+Bantam | Cocos (Keeling) Islands | Home Island | 503\
+Zürich | Switzerland | Zürich | 336800\
+Santiago de Chile | Chile | Santiago | 4703954\
+Shanghai | China | Shanghai | 9696300\
+Abidjan | Côte d’Ivoire | Abidjan | 2500000\
+Douala | Cameroon | Littoral | 1448300\
+Kinshasa | Congo, The Democratic Republic of the | Kinshasa | 5064000\
+Brazzaville | Congo | Brazzaville | 950000\
+Avarua | Cook Islands | Rarotonga | 11900\
+Santafé de Bogotá | Colombia | Santafé de Bogotá | 6260862\
+Moroni | Comoros | Njazidja | 36000\
+Praia | Cape Verde | São Tiago | 94800\
+San José | Costa Rica | San José | 339131\
+La Habana | Cuba | La Habana | 2256000\
+Flying Fish Cove | Christmas Island | – | 700\
+George Town | Cayman Islands | Grand Cayman | 19600\
+Nicosia | Cyprus | Nicosia | 195000\
+Praha | Czech Republic | Hlavní mesto Praha | 1181126\
+Berlin | Germany | Berliini | 3386667\
+Djibouti | Djibouti | Djibouti | 383000\
+Roseau | Dominica | St George | 16243\
+København | Denmark | København | 495699\
+Santo Domingo de Guzmán | Dominican Republic | Distrito Nacional | 1609966\
+Alger | Algeria | Alger | 2168000\
+Guayaquil | Ecuador | Guayas | 2070040\
+Cairo | Egypt | Kairo | 6789479\
+Asmara | Eritrea | Maekel | 431000\
+El-Aaiún | Western Sahara | El-Aaiún | 169000\
+Madrid | Spain | Madrid | 2879052\
+Tallinn | Estonia | Harjumaa | 403981\
+Addis Abeba | Ethiopia | Addis Abeba | 2495000\
+Helsinki [Helsingfors] | Finland | Newmaa | 555474\
+Suva | Fiji Islands | Central | 77366\
+Stanley | Falkland Islands | East Falkland | 1636\
+Paris | France | Île-de-France | 2125246\
+Tórshavn | Faroe Islands | Streymoyar | 14542\
+Weno | Micronesia, Federated States of | Chuuk | 22000\
+Libreville | Gabon | Estuaire | 419000\
+London | United Kingdom | England | 7285000\
+Tbilisi | Georgia | Tbilisi | 1235200\
+Accra | Ghana | Greater Accra | 1070000\
+Gibraltar | Gibraltar | – | 27025\
+Conakry | Guinea | Conakry | 1090610\
+Les Abymes | Guadeloupe | Grande-Terre | 62947\
+Serekunda | Gambia | Kombo St Mary | 102600\
+Bissau | Guinea-Bissau | Bissau | 241000\
+Malabo | Equatorial Guinea | Bioko | 40000\
+Athenai | Greece | Attika | 772072\
+Saint George´s | Grenada | St George | 4621\
+Nuuk | Greenland | Kitaa | 13445\
+Ciudad de Guatemala | Guatemala | Guatemala | 823301\
+Cayenne | French Guiana | Cayenne | 50699\
+Tamuning | Guam | – | 9500\
+Georgetown | Guyana | Georgetown | 254000\
+Kowloon and New Kowloon | Hong Kong | Kowloon and New Kowl | 1987996\
+Tegucigalpa | Honduras | Distrito Central | 813900\
+Zagreb | Croatia | Grad Zagreb | 706770\
+Port-au-Prince | Haiti | Ouest | 884472\
+Budapest | Hungary | Budapest | 1811552\
+Jakarta | Indonesia | Jakarta Raya | 9604900\
+Mumbai (Bombay) | India | Maharashtra | 10500000\
+Dublin | Ireland | Leinster | 481854\
+Teheran | Iran | Teheran | 6758845\
+Baghdad | Iraq | Baghdad | 4336000\
+Reykjavík | Iceland | Höfuðborgarsvæði | 109184\
+Jerusalem | Israel | Jerusalem | 633700\
+Roma | Italy | Latium | 2643581\
+Spanish Town | Jamaica | St. Catherine | 110379\
+Amman | Jordan | Amman | 1000000\
+Tokyo | Japan | Tokyo-to | 7980230\
+Almaty | Kazakstan | Almaty Qalasy | 1129400\
+Nairobi | Kenya | Nairobi | 2290000\
+Bishkek | Kyrgyzstan | Bishkek shaary | 589400\
+Phnom Penh | Cambodia | Phnom Penh | 570155\
+Bikenibeu | Kiribati | South Tarawa | 5055\
+Basseterre | Saint Kitts and Nevis | St George Basseterre | 11600\
+Seoul | South Korea | Seoul | 9981619\
+al-Salimiya | Kuwait | Hawalli | 130215\
+Vientiane | Laos | Viangchan | 531800\
+Beirut | Lebanon | Beirut | 1100000\
+Monrovia | Liberia | Montserrado | 850000\
+Tripoli | Libyan Arab Jamahiriya | Tripoli | 1682000\
+Castries | Saint Lucia | Castries | 2301\
+Schaan | Liechtenstein | Schaan | 5346\
+Colombo | Sri Lanka | Western | 645000\
+Maseru | Lesotho | Maseru | 297000\
+Vilnius | Lithuania | Vilna | 577969\
+Luxembourg [Luxemburg/Lëtzebuerg] | Luxembourg | Luxembourg | 80700\
+Riga | Latvia | Riika | 764328\
+Macao | Macao | Macau | 437500\
+Casablanca | Morocco | Casablanca | 2940623\
+Monte-Carlo | Monaco | – | 13154\
+Chisinau | Moldova | Chisinau | 719900\
+Antananarivo | Madagascar | Antananarivo | 675669\
+Male | Maldives | Maale | 71000\
+Ciudad de México | Mexico | Distrito Federal | 8591309\
+Dalap-Uliga-Darrit | Marshall Islands | Majuro | 28000\
+Skopje | Macedonia | Skopje | 444299\
+Bamako | Mali | Bamako | 809552\
+Birkirkara | Malta | Outer Harbour | 21445\
+Rangoon (Yangon) | Myanmar | Rangoon [Yangon] | 3361700\
+Ulan Bator | Mongolia | Ulaanbaatar | 773700\
+Garapan | Northern Mariana Islands | Saipan | 9200\
+Maputo | Mozambique | Maputo | 1018938\
+Nouakchott | Mauritania | Nouakchott | 667300\
+Plymouth | Montserrat | Plymouth | 2000\
+Fort-de-France | Martinique | Fort-de-France | 94050\
+Port-Louis | Mauritius | Port-Louis | 138200\
+Blantyre | Malawi | Blantyre | 478155\
+Kuala Lumpur | Malaysia | Wilayah Persekutuan | 1297526\
+Mamoutzou | Mayotte | Mamoutzou | 12000\
+Windhoek | Namibia | Khomas | 169000\
+Nouméa | New Caledonia | – | 76293\
+Niamey | Niger | Niamey | 420000\
+Kingston | Norfolk Island | – | 800\
+Lagos | Nigeria | Lagos | 1518000\
+Managua | Nicaragua | Managua | 959000\
+Alofi | Niue | – | 682\
+Amsterdam | Netherlands | Noord-Holland | 731200\
+Oslo | Norway | Oslo | 508726\
+Kathmandu | Nepal | Central | 591835\
+Yangor | Nauru | – | 4050\
+Auckland | New Zealand | Auckland | 381800\
+al-Sib | Oman | Masqat | 155000\
+Karachi | Pakistan | Sindh | 9269265\
+Ciudad de Panamá | Panama | Panamá | 471373\
+Adamstown | Pitcairn | – | 42\
+Lima | Peru | Lima | 6464693\
+Quezon | Philippines | National Capital Reg | 2173831\
+Koror | Palau | Koror | 12000\
+Port Moresby | Papua New Guinea | National Capital Dis | 247000\
+Warszawa | Poland | Mazowieckie | 1615369\
+San Juan | Puerto Rico | San Juan | 434374\
+Pyongyang | North Korea | Pyongyang-si | 2484000\
+Lisboa | Portugal | Lisboa | 563210\
+Asunción | Paraguay | Asunción | 557776\
+Gaza | Palestine | Gaza | 353632\
+Faaa | French Polynesia | Tahiti | 25888\
+Doha | Qatar | Doha | 355000\
+Saint-Denis | Réunion | Saint-Denis | 131480\
+Bucuresti | Romania | Bukarest | 2016131\
+Moscow | Russian Federation | Moscow (City) | 8389200\
+Kigali | Rwanda | Kigali | 286000\
+Riyadh | Saudi Arabia | Riyadh | 3324000\
+Omdurman | Sudan | Khartum | 1271403\
+Pikine | Senegal | Cap-Vert | 855287\
+Singapore | Singapore | – | 4017733\
+Jamestown | Saint Helena | Saint Helena | 1500\
+Longyearbyen | Svalbard and Jan Mayen | Länsimaa | 1438\
+Honiara | Solomon Islands | Honiara | 50100\
+Freetown | Sierra Leone | Western | 850000\
+San Salvador | El Salvador | San Salvador | 415346\
+Serravalle | San Marino | Serravalle/Dogano | 4802\
+Mogadishu | Somalia | Banaadir | 997000\
+Saint-Pierre | Saint Pierre and Miquelon | Saint-Pierre | 5808\
+São Tomé | Sao Tome and Principe | Aqua Grande | 49541\
+Paramaribo | Suriname | Paramaribo | 112000\
+Bratislava | Slovakia | Bratislava | 448292\
+Ljubljana | Slovenia | Osrednjeslovenska | 270986\
+Stockholm | Sweden | Lisboa | 750348\
+Mbabane | Swaziland | Hhohho | 61000\
+Victoria | Seychelles | Mahé | 41000\
+Damascus | Syria | Damascus | 1347000\
+Cockburn Town | Turks and Caicos Islands | Grand Turk | 4800\
+N´Djaména | Chad | Chari-Baguirmi | 530965\
+Lomé | Togo | Maritime | 375000\
+Bangkok | Thailand | Bangkok | 6320174\
+Dushanbe | Tajikistan | Karotegin | 524000\
+Fakaofo | Tokelau | Fakaofo | 300\
+Ashgabat | Turkmenistan | Ahal | 540600\
+Dili | East Timor | Dili | 47900\
+Nuku´alofa | Tonga | Tongatapu | 22400\
+Chaguanas | Trinidad and Tobago | Caroni | 56601\
+Tunis | Tunisia | Tunis | 690600\
+Istanbul | Turkey | Istanbul | 8787958\
+Funafuti | Tuvalu | Funafuti | 4600\
+Taipei | Taiwan | Taipei | 2641312\
+Dar es Salaam | Tanzania | Dar es Salaam | 1747000\
+Kampala | Uganda | Central | 890800\
+Kyiv | Ukraine | Kiova | 2624000\
+Montevideo | Uruguay | Montevideo | 1236000\
+New York | United States | New York | 8008278\
+Toskent | Uzbekistan | Toskent Shahri | 2117500\
+Città del Vaticano | Holy See (Vatican City State) | – | 455\
+Kingstown | Saint Vincent and the Grenadines | St George | 17100\
+Caracas | Venezuela | Distrito Federal | 1975294\
+Road Town | Virgin Islands, British | Tortola | 8000\
+Charlotte Amalie | Virgin Islands, U.S. | St Thomas | 13000\
+Ho Chi Minh City | Vietnam | Ho Chi Minh City | 3980000\
+Port-Vila | Vanuatu | Shefa | 33700\
+Mata-Utu | Wallis and Futuna | Wallis | 1137\
+Apia | Samoa | Upolu | 35900\
+Sanaa | Yemen | Sanaa | 503600\
+Beograd | Yugoslavia | Central Serbia | 1204000\
+Cape Town | South Africa | Western Cape | 2352121\
+Lusaka | Zambia | Lusaka | 1317000\
+Harare | Zimbabwe | Harare | 1410000\
+Taiping | Taiwan |  | 165524\
+Singapore | Singapore | – | 4017733\
+Sohumi | Georgia | Abhasia [Aphazeti] | 111700\
+Abidjan | Côte d’Ivoire | Abidjan | 2500000\
+Pescara | Italy | Abruzzit | 115698\
+Abu Dhabi | United Arab Emirates | Abu Dhabi | 398695\
+Banda Aceh | Indonesia | Aceh | 143409\
+Rio Branco | Brazil | Acre | 259537\
+Adana | Turkey | Adana | 1131198\
+Addis Abeba | Ethiopia | Addis Abeba | 2495000\
+Aden | Yemen | Aden | 398300\
+Adiyaman | Turkey | Adiyaman | 141529\
+Maikop | Russian Federation | Adygea | 167300\
+Batumi | Georgia | Adzaria [Atšara] | 137700\
+Afyon | Turkey | Afyon | 103984\
+Aguascalientes | Mexico | Aguascalientes | 643360\
+Ashgabat | Turkmenistan | Ahal | 540600\
+Nagoya | Japan | Aichi | 2154376\
+Ajman | United Arab Emirates | Ajman | 114395\
+Bærum | Norway | Akershus | 101340\
+Akita | Japan | Akita | 314440\
+Aksaray | Turkey | Aksaray | 102681\
+al-Ramadi | Iraq | al-Anbar | 192556\
+Kuwait | Kuwait | al-Asima | 28859\
+Kusti | Sudan | al-Bahr al-Abyad | 173599\
+Port Sudan | Sudan | al-Bahr al-Ahmar | 308195\
+Suhar | Oman | al-Batina | 90814\
+Kafr al-Dawwar | Egypt | al-Buhayra | 231978\
+al-Mansura | Egypt | al-Daqahliya | 369621\
+al-Faiyum | Egypt | al-Faiyum | 260964\
+al-Mahallat al-Kubra | Egypt | al-Gharbiya | 395402\
+al-Qamishliya | Syria | al-Hasaka | 144286\
+Wad Madani | Sudan | al-Jazira | 211362\
+Ara´ar | Saudi Arabia | al-Khudud al-Samaliy | 108100\
+al-Manama | Bahrain | al-Manama | 148000\
+Shibin al-Kawm | Egypt | al-Minufiya | 159909\
+al-Minya | Egypt | al-Minya | 201360\
+al-Najaf | Iraq | al-Najaf | 309010\
+al-Qadarif | Sudan | al-Qadarif | 191164\
+al-Diwaniya | Iraq | al-Qadisiya | 196519\
+Shubra al-Khayma | Egypt | al-Qalyubiya | 870716\
+Burayda | Saudi Arabia | al-Qasim | 248600\
+al-Raqqa | Syria | al-Raqqa | 108020\
+Tripoli | Lebanon | al-Shamal | 240000\
+al-Dammam | Saudi Arabia | al-Sharqiya | 482300\
+al-Sulaymaniya | Iraq | al-Sulaymaniya | 364096\
+Kirkuk | Iraq | al-Tamim | 418624\
+al-Zarqa | Jordan | al-Zarqa | 389815\
+al-Zawiya | Libyan Arab Jamahiriya | al-Zawiya | 89338\
+Birmingham | United States | Alabama | 242820\
+Maceió | Brazil | Alagoas | 786288\
+Anchorage | United States | Alaska | 260283\
+Calgary | Canada | Alberta | 768082\
+Alexandria | Egypt | Aleksandria | 3328196\
+Aleppo | Syria | Aleppo | 1261983\
+Alger | Algeria | Alger | 2168000\
+Taldyqorghan | Kazakstan | Almaty | 98000\
+Almaty | Kazakstan | Almaty Qalasy | 1129400\
+Strasbourg | France | Alsace | 264115\
+Barnaul | Russian Federation | Altai | 580100\
+Ciudad del Este | Paraguay | Alto Paraná | 133881\
+Macapá | Brazil | Amapá | 256033\
+Manaus | Brazil | Amazonas | 1255049\
+Gonder | Ethiopia | Amhara | 112249\
+Amman | Jordan | Amman | 1000000\
+Blagoveštšensk | Russian Federation | Amur | 222000\
+Long Xuyen | Vietnam | An Giang | 132681\
+Onitsha | Nigeria | Anambra & Enugu & Eb | 371900\
+Chimbote | Peru | Ancash | 336000\
+Sevilla | Spain | Andalusia | 701927\
+Hyderabad | India | Andhra Pradesh | 2964638\
+Andijon | Uzbekistan | Andijon | 318600\
+Andorra la Vella | Andorra | Andorra la Vella | 21189\
+Halle/Saale | Germany | Anhalt Sachsen | 254360\
+Hefei | China | Anhui | 1369100\
+Ankara | Turkey | Ankara | 3038159\
+Annaba | Algeria | Annaba | 222518\
+Antalya | Turkey | Antalya | 564914\
+Antananarivo | Madagascar | Antananarivo | 675669\
+Medellín | Colombia | Antioquia | 1861265\
+Antofagasta | Chile | Antofagasta | 251429\
+Antwerpen | Belgium | Antwerpen | 446525\
+Barcelona | Venezuela | Anzoátegui | 322267\
+Aomori | Japan | Aomori | 295969\
+Bari | Italy | Apulia | 331848\
+San Fernando de Apure | Venezuela | Apure | 93809\
+Aqtöbe | Kazakstan | Aqtöbe | 253100\
+São Tomé | Sao Tome and Principe | Aqua Grande | 49541\
+Bordeaux | France | Aquitaine | 215363\
+Arad | Romania | Arad | 184408\
+Zaragoza | Spain | Aragonia | 603367\
+Maracay | Venezuela | Aragua | 444443\
+Ardebil | Iran | Ardebil | 340386\
+Arecibo | Puerto Rico | Arecibo | 100131\
+Arequipa | Peru | Arequipa | 762000\
+Pitesti | Romania | Arges | 187170\
+Århus | Denmark | Århus | 284846\
+Ariana | Tunisia | Ariana | 197000\
+Phoenix | United States | Arizona | 1321045\
+Arkangeli | Russian Federation | Arkangeli | 361800\
+Little Rock | United States | Arkansas | 183133\
+Sultan Kudarat | Philippines | ARMM | 94861\
+Arusha | Tanzania | Arusha | 102500\
+Kumasi | Ghana | Ashanti | 385192\
+Khamis Mushayt | Saudi Arabia | Asir | 217900\
+Guwahati (Gauhati) | India | Assam | 584342\
+Assuan | Egypt | Assuan | 219017\
+Astana | Kazakstan | Astana | 311200\
+Astrahan | Russian Federation | Astrahan | 486100\
+Gijón | Spain | Asturia | 267980\
+Asunción | Paraguay | Asunción | 557776\
+Asyut | Egypt | Asyut | 343498\
+Copiapó | Chile | Atacama | 120128\
+Djougou | Benin | Atacora | 134099\
+Barranquilla | Colombia | Atlántico | 1223260\
+La Ceiba | Honduras | Atlántida | 89200\
+Cotonou | Benin | Atlantique | 536827\
+Athenai | Greece | Attika | 772072\
+Atyrau | Kazakstan | Atyrau | 142500\
+Auckland | New Zealand | Auckland | 381800\
+Clermont-Ferrand | France | Auvergne | 137140\
+Ayacucho | Peru | Ayacucho | 118960\
+Aydin | Turkey | Aydin | 128651\
+Cuenca | Ecuador | Azuay | 270353\
+Vung Tau | Vietnam | Ba Ria-Vung Tau | 145145\
+al-Hilla | Iraq | Babil | 268834\
+Thai Nguyen | Vietnam | Bac Thai | 127643\
+Bacau | Romania | Bacau | 209235\
+Kecskemét | Hungary | Bács-Kiskun | 105606\
+Stuttgart | Germany | Baden-Württemberg | 582443\
+Baghdad | Iraq | Baghdad | 4336000\
+Salvador | Brazil | Bahia | 2302832\
+Juba | Sudan | Bahr al-Jabal | 114980\
+Munich [München] | Germany | Baijeri | 1194560\
+Tijuana | Mexico | Baja California | 1212232\
+La Paz | Mexico | Baja California Sur | 196708\
+Bakı | Azerbaijan | Bakı | 1787800\
+Palma de Mallorca | Spain | Balears | 326993\
+Denpasar | Indonesia | Bali | 435000\
+Balikesir | Turkey | Balikesir | 196382\
+Mazar-e-Sharif | Afghanistan | Balkh | 127800\
+Balti | Moldova | Balti | 153400\
+Quetta | Pakistan | Baluchistan | 560307\
+Bamako | Mali | Bamako | 809552\
+Mogadishu | Somalia | Banaadir | 997000\
+Kikwit | Congo, The Democratic Republic of the | Bandundu | 182142\
+Bangkok | Thailand | Bangkok | 6320174\
+Bangui | Central African Republic | Bangui | 524000\
+Bani Suwayf | Egypt | Bani Suwayf | 172032\
+Banjul | Gambia | Banjul | 42326\
+Pécs | Hungary | Baranya | 157332\
+Barinas | Venezuela | Barinas | 217831\
+Barisal | Bangladesh | Barisal | 170232\
+Matadi | Congo, The Democratic Republic of the | Bas-Zaïre | 172730\
+Basel | Switzerland | Basel-Stadt | 166700\
+Bilbao | Spain | Baskimaa | 357589\
+Ufa | Russian Federation | Baškortostan | 1091200\
+Basra | Iraq | Basra | 406296\
+Caen | France | Basse-Normandie | 113987\
+Basse-Terre | Guadeloupe | Basse-Terre | 12433\
+Batman | Turkey | Batman | 203793\
+Batna | Algeria | Batna | 183377\
+Battambang | Cambodia | Battambang | 129800\
+Kumo | Nigeria | Bauchi & Gombe | 148000\
+Bayamón | Puerto Rico | Bayamón | 224044\
+Béchar | Algeria | Béchar | 107311\
+Beirut | Lebanon | Beirut | 1100000\
+Béjaïa | Algeria | Béjaïa | 117162\
+Belgorod | Russian Federation | Belgorod | 342000\
+Belize City | Belize | Belize City | 55810\
+Bender (Tîghina) | Moldova | Bender (Tîghina) | 125700\
+Bengasi | Libyan Arab Jamahiriya | Bengasi | 804000\
+Bengkulu | Indonesia | Bengkulu | 146439\
+Lobito | Angola | Benguela | 130000\
+Makurdi | Nigeria | Benue | 123100\
+Berlin | Germany | Berliini | 3386667\
+Bern | Switzerland | Bern | 122700\
+Legazpi | Philippines | Bicol | 157010\
+Patna | India | Bihar | 917243\
+Oradea | Romania | Bihor | 222239\
+Quy Nhon | Vietnam | Binh Dinh | 163385\
+Phan Thiêt | Vietnam | Binh Thuan | 114236\
+Talcahuano | Chile | Bíobío | 277752\
+Malabo | Equatorial Guinea | Bioko | 40000\
+Biserta | Tunisia | Biserta | 108900\
+Bishkek | Kyrgyzstan | Bishkek shaary | 589400\
+Biskra | Algeria | Biskra | 128281\
+Bissau | Guinea-Bissau | Bissau | 241000\
+Blantyre | Malawi | Blantyre | 478155\
+Blida (el-Boulaida) | Algeria | Blida | 127284\
+Cartagena | Colombia | Bolívar | 805757\
+Parakou | Benin | Borgou | 103577\
+Maiduguri | Nigeria | Borno & Yobe | 320000\
+Miskolc | Hungary | Borsod-Abaúj-Zemplén | 172357\
+Botosani | Romania | Botosani | 128730\
+Bouaké | Côte d’Ivoire | Bouaké | 329850\
+Koudougou | Burkina Faso | Boulkiemdé | 105000\
+Dijon | France | Bourgogne | 149867\
+Tunja | Colombia | Boyacá | 109740\
+Braga | Portugal | Braga | 90535\
+Braila | Romania | Braila | 233756\
+Potsdam | Germany | Brandenburg | 128983\
+Brasov | Romania | Brasov | 314225\
+Bratislava | Slovakia | Bratislava | 448292\
+Brazzaville | Congo | Brazzaville | 950000\
+Bremen | Germany | Bremen | 540330\
+Brest | Belarus | Brest | 286000\
+St-Étienne | France | Bretagne | 180210\
+Vancouver | Canada | British Colombia | 514008\
+Brjansk | Russian Federation | Brjansk | 457400\
+Bandar Seri Begawan | Brunei | Brunei and Muara | 21484\
+Bruxelles [Brussel] | Belgium | Bryssel | 133859\
+Budapest | Hungary | Budapest | 1811552\
+La Matanza | Argentina | Buenos Aires | 1266461\
+Buhoro | Uzbekistan | Buhoro | 237100\
+Bujumbura | Burundi | Bujumbura | 300000\
+Bucuresti | Romania | Bukarest | 2016131\
+Bulawayo | Zimbabwe | Bulawayo | 621742\
+Burgas | Bulgaria | Burgas | 195255\
+Ulan-Ude | Russian Federation | Burjatia | 370400\
+Bursa | Turkey | Bursa | 1095842\
+Bushehr | Iran | Bushehr | 143641\
+Buzau | Romania | Buzau | 148372\
+Tuguegarao | Philippines | Cagayan Valley | 120645\
+Caguas | Puerto Rico | Caguas | 140502\
+Cajamarca | Peru | Cajamarca | 108009\
+Reggio di Calabria | Italy | Calabria | 179617\
+Manizales | Colombia | Caldas | 337580\
+Los Angeles | United States | California | 3694820\
+Callao | Peru | Callao | 424294\
+Camagüey | Cuba | Camagüey | 298726\
+Napoli | Italy | Campania | 1002619\
+Campeche | Mexico | Campeche | 216735\
+Can Tho | Vietnam | Can Tho | 215587\
+Las Palmas de Gran Canaria | Spain | Canary Islands | 354757\
+Santander | Spain | Cantabria | 184165\
+Christchurch | New Zealand | Canterbury | 324200\
+Pikine | Senegal | Cap-Vert | 855287\
+Canberra | Australia | Capital Region | 322723\
+Florencia | Colombia | Caquetá | 108574\
+Baguio | Philippines | CAR | 252386\
+Valencia | Venezuela | Carabobo | 794246\
+Butuan | Philippines | Caraga | 267279\
+Resita | Romania | Caras-Severin | 93976\
+Carolina | Puerto Rico | Carolina | 186076\
+Chaguanas | Trinidad and Tobago | Caroni | 56601\
+Casablanca | Morocco | Casablanca | 2940623\
+Valladolid | Spain | Castilla and León | 319998\
+Castries | Saint Lucia | Castries | 2301\
+San Fernando del Valle de Cata | Argentina | Catamarca | 134935\
+Popayán | Colombia | Cauca | 200719\
+Cayenne | French Guiana | Cayenne | 50699\
+Belmopan | Belize | Cayo | 7105\
+Fortaleza | Brazil | Ceará | 2097757\
+Kampala | Uganda | Central | 890800\
+Semarang | Indonesia | Central Java | 1104405\
+San José del Monte | Philippines | Central Luzon | 315807\
+Thessaloniki | Greece | Central Macedonia | 383967\
+Iligan | Philippines | Central Mindanao | 285061\
+Beograd | Yugoslavia | Central Serbia | 1204000\
+Cebu | Philippines | Central Visayas | 718821\
+Yaoundé | Cameroon | Centre | 1372800\
+Valledupar | Colombia | Cesar | 263247\
+Resistencia | Argentina | Chaco | 229212\
+Kanggye | North Korea | Chagang | 223410\
+Shahr-e Kord | Iran | Chaharmahal va Bakht | 100477\
+Le Havre | France | Champagne-Ardenne | 190905\
+Chandigarh | India | Chandigarh | 504094\
+Changhwa | Taiwan | Changhwa | 227715\
+Khouribga | Morocco | Chaouia-Ouardigha | 152090\
+N´Djaména | Chad | Chari-Baguirmi | 530965\
+Cheju | South Korea | Cheju | 258511\
+Raipur | India | Chhatisgarh | 438639\
+Chiang Mai | Thailand | Chiang Mai | 171100\
+Tuxtla Gutiérrez | Mexico | Chiapas | 433544\
+Chiayi | Taiwan | Chiayi | 265109\
+Chiba | Japan | Chiba | 863930\
+Juárez | Mexico | Chihuahua | 1217818\
+Ríobamba | Ecuador | Chimborazo | 123163\
+Chinandega | Nicaragua | Chinandega | 97387\
+Chisinau | Moldova | Chisinau | 719900\
+Chittagong | Bangladesh | Chittagong | 1392860\
+Ech-Chleff (el-Asnam) | Algeria | Chlef | 96794\
+Chonju | South Korea | Chollabuk | 563153\
+Sunchon | South Korea | Chollanam | 249263\
+Chongqing | China | Chongqing | 6351600\
+Comodoro Rivadavia | Argentina | Chubut | 124104\
+Chongju | South Korea | Chungchongbuk | 531376\
+Chonan | South Korea | Chungchongnam | 330259\
+Sucre | Bolivia | Chuquisaca | 178426\
+Weno | Micronesia, Federated States of | Chuuk | 22000\
+Ciego de Ávila | Cuba | Ciego de Ávila | 98505\
+Cienfuegos | Cuba | Cienfuegos | 132770\
+Cizah | Uzbekistan | Cizah | 124800\
+Cluj-Napoca | Romania | Cluj | 332498\
+Saltillo | Mexico | Coahuila de Zaragoza | 577352\
+Mombasa | Kenya | Coast | 461753\
+Cochabamba | Bolivia | Cochabamba | 482800\
+Coímbra | Portugal | Coímbra | 96100\
+Colima | Mexico | Colima | 129454\
+Denver | United States | Colorado | 554636\
+Conakry | Guinea | Conakry | 1090610\
+Bridgeport | United States | Connecticut | 139529\
+Constanta | Romania | Constanta | 342264\
+Constantine | Algeria | Constantine | 443727\
+Ndola | Zambia | Copperbelt | 329200\
+Coquimbo | Chile | Coquimbo | 143353\
+Córdoba | Argentina | Córdoba | 1157507\
+Corrientes | Argentina | Corrientes | 258103\
+San Pedro Sula | Honduras | Cortés | 383900\
+Çorum | Turkey | Çorum | 145495\
+Herakleion | Greece | Crete | 116178\
+Calabar | Nigeria | Cross River | 174400\
+Szeged | Hungary | Csongrád | 158158\
+Soacha | Colombia | Cundinamarca | 272058\
+Willemstad | Netherlands Antilles | Curaçao | 2345\
+Cusco | Peru | Cusco | 291000\
+Buon Ma Thuot | Vietnam | Dac Lac | 97044\
+Mahatškala | Russian Federation | Dagestan | 332800\
+Nouâdhibou | Mauritania | Dakhlet Nouâdhibou | 97600\
+Daloa | Côte d’Ivoire | Daloa | 121842\
+Damascus | Syria | Damascus | 1347000\
+Jaramana | Syria | Damaskos | 138469\
+Târgoviste | Romania | Dâmbovita | 98980\
+Dar es Salaam | Tanzania | Dar es Salaam | 1747000\
+Nyala | Sudan | Darfur al-Janubiya | 227183\
+al-Fashir | Sudan | Darfur al-Shamaliya | 141884\
+Dashhowuz | Turkmenistan | Dashhowuz | 141800\
+Daugavpils | Latvia | Daugavpils | 114829\
+Dayr al-Zawr | Syria | Dayr al-Zawr | 140459\
+Delhi | India | Delhi | 7206704\
+Denizli | Turkey | Denizli | 253848\
+Dhaka | Bangladesh | Dhaka | 3612850\
+al-Nasiriya | Iraq | DhiQar | 265937\
+Dili | East Timor | Dili | 47900\
+Diourbel | Senegal | Diourbel | 99400\
+Dire Dawa | Ethiopia | Dire Dawa | 164851\
+Washington | United States | District of Columbia | 572059\
+Tegucigalpa | Honduras | Distrito Central | 813900\
+Ciudad de México | Mexico | Distrito Federal | 8591309\
+Santo Domingo de Guzmán | Dominican Republic | Distrito Nacional | 1609966\
+Baquba | Iraq | Diyala | 114516\
+Diyarbakir | Turkey | Diyarbakir | 479884\
+Djibouti | Djibouti | Djibouti | 383000\
+Dnipropetrovsk | Ukraine | Dnipropetrovsk | 1103000\
+Tiraspol | Moldova | Dnjestria | 194300\
+Dodoma | Tanzania | Dodoma | 189000\
+Doha | Qatar | Doha | 355000\
+Craiova | Romania | Dolj | 313530\
+Wroclaw | Poland | Dolnoslaskie | 636765\
+Donetsk | Ukraine | Donetsk | 1050000\
+Biên Hoa | Vietnam | Dong Nai | 282095\
+Safi | Morocco | Doukkala-Abda | 262300\
+Emmen | Netherlands | Drenthe | 105853\
+San Francisco de Macorís | Dominican Republic | Duarte | 108485\
+Dubai | United Arab Emirates | Dubai | 669181\
+Dunedin | New Zealand | Dunedin | 119600\
+Durango | Mexico | Durango | 490524\
+Tabriz | Iran | East Azerbaidzan | 1191043\
+Stanley | Falkland Islands | East Falkland | 1636\
+Gent | Belgium | East Flanderi | 224180\
+Linköping | Sweden | East Götanmaan län | 133168\
+Surabaya | Indonesia | East Java | 2663820\
+Mbuji-Mayi | Congo, The Democratic Republic of the | East Kasai | 806475\
+Öskemen | Kazakstan | East Kazakstan | 311000\
+Biratnagar | Nepal | Eastern | 157764\
+Port Elizabeth | South Africa | Eastern Cape | 752319\
+Tacloban | Philippines | Eastern Visayas | 178639\
+Edirne | Turkey | Edirne | 123383\
+Benin City | Nigeria | Edo & Delta | 229400\
+Matsuyama | Japan | Ehime | 466133\
+Machala | Ecuador | El Oro | 210368\
+El-Aaiún | Western Sahara | El-Aaiún | 169000\
+Elâzig | Turkey | Elâzig | 228815\
+Bologna | Italy | Emilia-Romagna | 381161\
+London | United Kingdom | England | 7285000\
+Paraná | Argentina | Entre Rios | 207041\
+Mbandaka | Congo, The Democratic Republic of the | Equateur | 169841\
+Erzincan | Turkey | Erzincan | 102304\
+Erzurum | Turkey | Erzurum | 246535\
+Esfahan | Iran | Esfahan | 1266072\
+Eskisehir | Turkey | Eskisehir | 470781\
+Esmeraldas | Ecuador | Esmeraldas | 123045\
+Cariacica | Brazil | Espírito Santo | 319033\
+Libreville | Gabon | Estuaire | 419000\
+Badajoz | Spain | Extremadura | 136613\
+Maroua | Cameroon | Extrême-Nord | 143000\
+Fakaofo | Tokelau | Fakaofo | 300\
+Santa Ana de Coro | Venezuela | Falcón | 185766\
+Kükon | Uzbekistan | Fargona | 190100\
+Shiraz | Iran | Fars | 1053025\
+Sarajevo | Bosnia and Herzegovina | Federaatio | 360000\
+Abuja | Nigeria | Federal Capital Dist | 350100\
+Székesfehérvár | Hungary | Fejér | 105119\
+Fès | Morocco | Fès-Boulemane | 541162\
+Fianarantsoa | Madagascar | Fianarantsoa | 99005\
+Almere | Netherlands | Flevoland | 142465\
+Jacksonville | United States | Florida | 735167\
+Formosa | Argentina | Formosa | 147636\
+Fort-de-France | Martinique | Fort-de-France | 94050\
+Besançon | France | Franche-Comté | 117733\
+Francistown | Botswana | Francistown | 101805\
+Frederiksberg | Denmark | Frederiksberg | 90327\
+Bloemfontein | South Africa | Free State | 334341\
+Trieste | Italy | Friuli-Venezia Giuli | 216459\
+Fuzhou | China | Fujian | 1593800\
+Fukui | Japan | Fukui | 254818\
+Fukuoka | Japan | Fukuoka | 1308379\
+Iwaki | Japan | Fukushima | 361737\
+Funafuti | Tuvalu | Funafuti | 4600\
+Odense | Denmark | Fyn | 183912\
+Gabès | Tunisia | Gabès | 106600\
+Gaborone | Botswana | Gaborone | 213017\
+Galati | Romania | Galati | 330276\
+Vigo | Spain | Galicia | 283670\
+Lanzhou | China | Gansu | 1565800\
+Soweto | South Africa | Gauteng | 904165\
+Gävle | Sweden | Gävleborgs län | 90742\
+Gaza | Palestine | Gaza | 353632\
+Gaziantep | Turkey | Gaziantep | 789056\
+Apeldoorn | Netherlands | Gelderland | 153491\
+Geneve | Switzerland | Geneve | 173500\
+Georgetown | Guyana | Georgetown | 254000\
+Atlanta | United States | Georgia | 416474\
+Gəncə | Azerbaijan | Gəncə | 299300\
+Kénitra | Morocco | Gharb-Chrarda-Béni H | 292600\
+Ghardaïa | Algeria | Ghardaïa | 89415\
+Gifu | Japan | Gifu | 408007\
+Rasht | Iran | Gilan | 417748\
+Giza | Egypt | Giza | 2221868\
+Goiânia | Brazil | Goiás | 1056330\
+Gorgan | Iran | Golestan | 188710\
+Gomel | Belarus | Gomel | 475000\
+Târgu Jiu | Romania | Gorj | 98524\
+Sofija | Bulgaria | Grad Sofija | 1122302\
+Zagreb | Croatia | Grad Zagreb | 706770\
+George Town | Cayman Islands | Grand Cayman | 19600\
+Cockburn Town | Turks and Caicos Islands | Grand Turk | 4800\
+Les Abymes | Guadeloupe | Grande-Terre | 62947\
+Bayamo | Cuba | Granma | 141000\
+Accra | Ghana | Greater Accra | 1070000\
+Grodno | Belarus | Grodno | 302000\
+Groningen | Netherlands | Groningen | 172701\
+León | Mexico | Guanajuato | 1133576\
+Kanton [Guangzhou] | China | Guangdong | 4256300\
+Nanning | China | Guangxi | 1161800\
+Guantánamo | Cuba | Guantánamo | 205078\
+Calabozo | Venezuela | Guárico | 107146\
+Ciudad de Guatemala | Guatemala | Guatemala | 823301\
+Guayaquil | Ecuador | Guayas | 2070040\
+Guaynabo | Puerto Rico | Guaynabo | 100053\
+Acapulco de Juárez | Mexico | Guerrero | 721011\
+Guiyang | China | Guizhou | 1465200\
+Ahmedabad | India | Gujarat | 2876710\
+Maebashi | Japan | Gumma | 284473\
+Györ | Hungary | Györ-Moson-Sopron | 127119\
+Beerseba | Israel | Ha Darom | 163700\
+Rishon Le Ziyyon | Israel | Ha Merkaz | 188200\
+Habarovsk | Russian Federation | Habarovsk | 609400\
+al-Mukalla | Yemen | Hadramawt | 122400\
+Haifa | Israel | Haifa | 265700\
+Hail | Saudi Arabia | Hail | 176800\
+Haikou | China | Hainan | 454300\
+Charleroi | Belgium | Hainaut | 200827\
+Haiphong | Vietnam | Haiphong | 783133\
+Debrecen | Hungary | Hajdú-Bihar | 203648\
+Abakan | Russian Federation | Hakassia | 169200\
+Hama | Syria | Hama | 343361\
+Hamadan | Iran | Hamadan | 401281\
+Hamburg | Germany | Hamburg | 1704735\
+Hamhung | North Korea | Hamgyong N | 709730\
+Chongjin | North Korea | Hamgyong P | 582480\
+Hamilton | New Zealand | Hamilton | 117100\
+Hanoi | Vietnam | Hanoi | 1410000\
+Surgut | Russian Federation | Hanti-Mansia | 274900\
+Harare | Zimbabwe | Harare | 1410000\
+Tallinn | Estonia | Harjumaa | 403981\
+Harkova [Harkiv] | Ukraine | Harkova | 1500000\
+Faridabad | India | Haryana | 703592\
+Stara Zagora | Bulgaria | Haskovo | 147939\
+Iskenderun | Turkey | Hatay | 153022\
+Rennes | France | Haute-Normandie | 206229\
+Kisangani | Congo, The Democratic Republic of the | Haute-Zaïre | 417517\
+Honolulu | United States | Hawaii | 371657\
+al-Salimiya | Kuwait | Hawalli | 130215\
+Shijiazhuang | China | Hebei | 2041500\
+Hebron | Palestine | Hebron | 119401\
+Harbin | China | Heilongjiang | 4289800\
+Zhengzhou | China | Henan | 2107200\
+Herat | Afghanistan | Herat | 186800\
+Herson | Ukraine | Herson | 353000\
+Frankfurt am Main | Germany | Hessen | 643821\
+Mbabane | Swaziland | Hhohho | 61000\
+Pachuca de Soto | Mexico | Hidalgo | 244688\
+Hims | Syria | Hims | 507404\
+Hiroshima | Japan | Hiroshima | 1119117\
+Praha | Czech Republic | Hlavní mesto Praha | 1181126\
+Hmelnytskyi | Ukraine | Hmelnytskyi | 262000\
+Ho Chi Minh City | Vietnam | Ho Chi Minh City | 3980000\
+Hodeida | Yemen | Hodeida | 298500\
+Reykjavík | Iceland | Höfuðborgarsvæði | 109184\
+Sapporo | Japan | Hokkaido | 1790886\
+Holguín | Cuba | Holguín | 249492\
+Bantam | Cocos (Keeling) Islands | Home Island | 503\
+Victoria | Hong Kong | Hongkong | 1312637\
+Honiara | Solomon Islands | Honiara | 50100\
+Minsk | Belarus | Horad Minsk | 1674000\
+Bergen | Norway | Hordaland | 230948\
+Bandar-e-Abbas | Iran | Hormozgan | 273578\
+Bobo-Dioulasso | Burkina Faso | Houet | 300000\
+Hsinchu | Taiwan | Hsinchu | 361958\
+Hualien | Taiwan | Hualien | 108407\
+Huambo | Angola | Huambo | 163100\
+Huánuco | Peru | Huanuco | 129688\
+Wuhan | China | Hubei | 4344600\
+Neiva | Colombia | Huila | 300052\
+Changsha | China | Hunan | 1809800\
+Haeju | North Korea | Hwanghae N | 229172\
+Sariwon | North Korea | Hwanghae P | 254146\
+Kobe | Japan | Hyogo | 1425139\
+Iasi | Romania | Iasi | 348070\
+Mito | Japan | Ibaragi | 246559\
+Ibb | Yemen | Ibb | 103300\
+Ica | Peru | Ica | 194820\
+Mersin (Içel) | Turkey | Içel | 587212\
+Boise City | United States | Idaho | 185787\
+Idlib | Syria | Idlib | 91081\
+Ilam | Iran | Ilam | 126346\
+Ilan | Taiwan | Ilan | 92000\
+Paris | France | Île-de-France | 2125246\
+Chicago | United States | Illinois | 2896016\
+San Carlos | Philippines | Ilocos | 154264\
+Ibarra | Ecuador | Imbabura | 130643\
+Kutaisi | Georgia | Imereti | 240900\
+Aba | Nigeria | Imo & Abia | 298900\
+Inchon | South Korea | Inchon | 2559424\
+Indianapolis | United States | Indiana | 791926\
+Maxixe | Mozambique | Inhambane | 93985\
+Valletta | Malta | Inner Harbour | 7073\
+Baotou | China | Inner Mongolia | 980000\
+Des Moines | United States | Iowa | 198682\
+Irbid | Jordan | Irbid | 231511\
+Irbil | Iraq | Irbil | 485968\
+Irkutsk | Russian Federation | Irkutsk | 593700\
+Bassein (Pathein) | Myanmar | Irrawaddy [Ayeyarwad | 183900\
+Kanazawa | Japan | Ishikawa | 455386\
+Islamabad | Pakistan | Islamabad | 524500\
+Ismailia | Egypt | Ismailia | 254477\
+Isparta | Turkey | Isparta | 121911\
+Istanbul | Turkey | Istanbul | 8787958\
+Ivano-Frankivsk | Ukraine | Ivano-Frankivsk | 237000\
+Ivanovo | Russian Federation | Ivanovo | 459200\
+Morioka | Japan | Iwate | 287353\
+Izmir | Turkey | Izmir | 2130359\
+Jakarta | Indonesia | Jakarta Raya | 9604900\
+Guadalajara | Mexico | Jalisco | 1647720\
+Jambi | Indonesia | Jambi | 385201\
+Srinagar | India | Jammu and Kashmir | 892506\
+Jaroslavl | Russian Federation | Jaroslavl | 616700\
+Saint Helier | United Kingdom | Jersey | 27523\
+Jerusalem | Israel | Jerusalem | 633700\
+Ranchi | India | Jharkhand | 599306\
+Nanking [Nanjing] | China | Jiangsu | 2870300\
+Nanchang | China | Jiangxi | 1691600\
+Changchun | China | Jilin | 2812000\
+Ceské Budejovice | Czech Republic | Jizní Cechy | 98186\
+Brno | Czech Republic | Jizní Morava | 381862\
+Johor Baharu | Malaysia | Johor | 328436\
+Jönköping | Sweden | Jönköpings län | 117095\
+Kismaayo | Somalia | Jubbada Hoose | 90000\
+San Salvador de Jujuy | Argentina | Jujuy | 178748\
+Huancayo | Peru | Junín | 327000\
+Naltšik | Russian Federation | Kabardi-Balkaria | 233400\
+Kabul | Afghanistan | Kabol | 1780000\
+Ouagadougou | Burkina Faso | Kadiogo | 824000\
+Zaria | Nigeria | Kaduna | 379200\
+Kaesong | North Korea | Kaesong-si | 171500\
+Kafr al-Shaykh | Egypt | Kafr al-Shaykh | 124819\
+Takamatsu | Japan | Kagawa | 332471\
+Kagoshima | Japan | Kagoshima | 549977\
+Kahramanmaras | Turkey | Kahramanmaras | 245772\
+Cairo | Egypt | Kairo | 6789479\
+Kairouan | Tunisia | Kairouan | 113100\
+Pontianak | Indonesia | Kalimantan Barat | 409632\
+Banjarmasin | Indonesia | Kalimantan Selatan | 482931\
+Palangka Raya | Indonesia | Kalimantan Tengah | 99693\
+Samarinda | Indonesia | Kalimantan Timur | 399175\
+Kaliningrad | Russian Federation | Kaliningrad | 424400\
+Elista | Russian Federation | Kalmykia | 103300\
+Kaluga | Russian Federation | Kaluga | 339300\
+Petropavlovsk-Kamtšatski | Russian Federation | Kamtšatka | 194100\
+Jokohama [Yokohama] | Japan | Kanagawa | 3339594\
+Wonju | South Korea | Kang-won | 237460\
+Wonsan | North Korea | Kangwon | 300148\
+Kano | Nigeria | Kano & Jigawa | 674100\
+Wichita | United States | Kansas | 344284\
+Kaohsiung | Taiwan | Kaohsiung | 1475505\
+Kaolack | Senegal | Kaolack | 199000\
+Karabük | Turkey | Karabük | 118285\
+Nukus | Uzbekistan | Karakalpakistan | 194100\
+Karaman | Turkey | Karaman | 104200\
+Tšerkessk | Russian Federation | Karatšai-Tšerkessia | 121700\
+Karbala | Iraq | Karbala | 296705\
+Petroskoi | Russian Federation | Karjala | 282100\
+Bangalore | India | Karnataka | 2660088\
+Klagenfurt | Austria | Kärnten | 91141\
+Dushanbe | Tajikistan | Karotegin | 524000\
+Kars | Turkey | Kars | 93000\
+Kassala | Sudan | Kassala | 234622\
+Albacete | Spain | Kastilia-La Mancha | 147527\
+Barcelona | Spain | Katalonia | 1503451\
+Katsina | Nigeria | Katsina | 206500\
+Kaunas | Lithuania | Kaunas | 412639\
+Kayseri | Turkey | Kayseri | 475657\
+Alor Setar | Malaysia | Kedah | 124412\
+Keelung (Chilung) | Taiwan | Keelung | 385201\
+Kota Bharu | Malaysia | Kelantan | 219582\
+Novokuznetsk | Russian Federation | Kemerovo | 561600\
+Lexington-Fayette | United States | Kentucky | 260512\
+Cochin (Kochi) | India | Kerala | 564589\
+Kerman | Iran | Kerman | 384991\
+Kermanshah | Iran | Kermanshah | 692986\
+Khan Yunis | Palestine | Khan Yunis | 123175\
+Nha Trang | Vietnam | Khanh Hoa | 221331\
+Omdurman | Sudan | Khartum | 1271403\
+Windhoek | Namibia | Khomas | 169000\
+Khon Kaen | Thailand | Khon Kaen | 126500\
+Mashhad | Iran | Khorasan | 1887405\
+Ürgenc | Uzbekistan | Khorazm | 138900\
+Khujand | Tajikistan | Khujand | 161500\
+Khulna | Bangladesh | Khulna | 663340\
+Ahvaz | Iran | Khuzestan | 804980\
+Rach Gia | Vietnam | Kien Giang | 141132\
+Kigali | Rwanda | Kigali | 286000\
+Moshi | Tanzania | Kilimanjaro | 96800\
+Kilis | Turkey | Kilis | 118245\
+Kinshasa | Congo, The Democratic Republic of the | Kinshasa | 5064000\
+Kyiv | Ukraine | Kiova | 2624000\
+Kirikkale | Turkey | Kirikkale | 142044\
+Kirov | Russian Federation | Kirov | 466200\
+Kirovograd | Ukraine | Kirovograd | 265000\
+Nuuk | Greenland | Kitaa | 13445\
+Klaipeda | Lithuania | Klaipeda | 202451\
+København | Denmark | København | 495699\
+Gebze | Turkey | Kocaeli | 264170\
+Kochi | Japan | Kochi | 324710\
+Serekunda | Gambia | Kombo St Mary | 102600\
+Syktyvkar | Russian Federation | Komi | 229700\
+Konya | Turkey | Konya | 628364\
+Sanandaj | Iran | Kordestan | 277808\
+Korhogo | Côte d’Ivoire | Korhogo | 109445\
+Koror | Palau | Koror | 12000\
+Priština | Yugoslavia | Kosovo and Metohija | 155496\
+Kostroma | Russian Federation | Kostroma | 288100\
+Pointe-Noire | Congo | Kouilou | 500000\
+Kowloon and New Kowloon | Hong Kong | Kowloon and New Kowl | 1987996\
+Krasnodar | Russian Federation | Krasnodar | 639000\
+Krasnojarsk | Russian Federation | Krasnojarsk | 875500\
+Sevastopol | Ukraine | Krim | 348000\
+Bydgoszcz | Poland | Kujawsko-Pomorskie | 386855\
+Kumamoto | Japan | Kumamoto | 656734\
+Obeid | Sudan | Kurdufan al-Shamaliy | 229425\
+Kurgan | Russian Federation | Kurgan | 364700\
+Kursk | Russian Federation | Kursk | 443500\
+Kütahya | Turkey | Kütahya | 144761\
+Rustavi | Georgia | Kvemo Kartli | 155400\
+Kwangju | South Korea | Kwangju | 1368341\
+Ilorin | Nigeria | Kwara & Kogi | 475800\
+Inanda | South Africa | KwaZulu-Natal | 634065\
+Songnam | South Korea | Kyonggi | 869094\
+Pohang | South Korea | Kyongsangbuk | 508899\
+Ulsan | South Korea | Kyongsangnam | 1084891\
+Kioto | Japan | Kyoto | 1461974\
+Temuco | Chile | La Araucanía | 233041\
+Maicao | Colombia | La Guajira | 108053\
+La Habana | Cuba | La Habana | 2256000\
+Trujillo | Peru | La Libertad | 652000\
+La Paz | Bolivia | La Paz | 758141\
+La Rioja | Argentina | La Rioja | 138117\
+La Romana | Dominican Republic | La Romana | 140204\
+Lagos | Nigeria | Lagos | 1518000\
+Da Lat | Vietnam | Lam Dong | 106409\
+Chiclayo | Peru | Lambayeque | 517000\
+Bandar Lampung | Indonesia | Lampung | 680332\
+Montpellier | France | Languedoc-Roussillon | 225392\
+Longyearbyen | Svalbard and Jan Mayen | Länsimaa | 1438\
+Barquisimeto | Venezuela | Lara | 877239\
+Victoria de las Tunas | Cuba | Las Tunas | 132350\
+Latakia | Syria | Latakia | 264563\
+Roma | Italy | Latium | 2643581\
+Chärjew | Turkmenistan | Lebap | 189200\
+Dublin | Ireland | Leinster | 481854\
+León | Nicaragua | León | 123865\
+Shenyang | China | Liaoning | 4265200\
+Liège | Belgium | Liège | 185639\
+Liepaja | Latvia | Liepaja | 89439\
+Genova | Italy | Liguria | 636104\
+Lilongwe | Malawi | Lilongwe | 435964\
+Lima | Peru | Lima | 6464693\
+Limassol | Cyprus | Limassol | 154400\
+Maastricht | Netherlands | Limburg | 122087\
+Limoges | France | Limousin | 133968\
+Lipetsk | Russian Federation | Lipetsk | 521000\
+Stockholm | Sweden | Lisboa | 750348\
+Douala | Cameroon | Littoral | 1448300\
+Lódz | Poland | Lodzkie | 800110\
+Moundou | Chad | Logone Occidental | 99500\
+Loja | Ecuador | Loja | 123875\
+Milano | Italy | Lombardia | 1300977\
+Khorramabad | Iran | Lorestan | 272815\
+Iquitos | Peru | Loreto | 367000\
+Vanadzor | Armenia | Lori | 172700\
+Metz | France | Lorraine | 123776\
+Puerto Montt | Chile | Los Lagos | 152194\
+Quevedo | Ecuador | Los Ríos | 129631\
+New Orleans | United States | Louisiana | 484674\
+Pleven | Bulgaria | Lovec | 121952\
+Luanda | Angola | Luanda | 2022000\
+Lublin | Poland | Lubelskie | 356251\
+Gorzów Wielkopolski | Poland | Lubuskie | 126019\
+Lugansk | Ukraine | Lugansk | 469000\
+Lusaka | Zambia | Lusaka | 1317000\
+Luxembourg [Luxemburg/Lëtzebuerg] | Luxembourg | Luxembourg | 80700\
+Luxor | Egypt | Luxor | 360503\
+Lviv | Ukraine | Lviv | 788000\
+Male | Maldives | Maale | 71000\
+Macao | Macao | Macau | 437500\
+Indore | India | Madhya Pradesh | 1091674\
+Madrid | Spain | Madrid | 2879052\
+Asmara | Eritrea | Maekel | 431000\
+Magadan | Russian Federation | Magadan | 121000\
+Punta Arenas | Chile | Magallanes | 125631\
+Santa Marta | Colombia | Magdalena | 359147\
+Pagakku (Pakokku) | Myanmar | Magwe [Magway] | 94800\
+Mahajanga | Madagascar | Mahajanga | 100807\
+Mumbai (Bombay) | India | Maharashtra | 10500000\
+Victoria | Seychelles | Mahé | 41000\
+Dalap-Uliga-Darrit | Marshall Islands | Majuro | 28000\
+Malatya | Turkey | Malatya | 330312\
+Kraków | Poland | Malopolskie | 738150\
+Mamoutzou | Mayotte | Mamoutzou | 12000\
+Portoviejo | Ecuador | Manabí | 176413\
+Managua | Nicaragua | Managua | 959000\
+Mandalay | Myanmar | Mandalay | 885300\
+Aqtau | Kazakstan | Mangghystau | 143400\
+Chimoio | Mozambique | Manica | 171056\
+Mutare | Zimbabwe | Manicaland | 131367\
+Imphal | India | Manipur | 198535\
+Manisa | Turkey | Manisa | 207148\
+Winnipeg | Canada | Manitoba | 618477\
+Maputo | Mozambique | Maputo | 1018938\
+Maradi | Niger | Maradi | 112965\
+Baia Mare | Romania | Maramures | 149665\
+São Luís | Brazil | Maranhão | 837588\
+Ancona | Italy | Marche | 98329\
+Kiziltepe | Turkey | Mardin | 112000\
+Joškar-Ola | Russian Federation | Marinmaa | 249200\
+Lomé | Togo | Maritime | 375000\
+Arak | Iran | Markazi | 380755\
+Marrakech | Morocco | Marrakech-Tensift-Al | 621914\
+Mary | Turkmenistan | Mary | 101000\
+Baltimore | United States | Maryland | 651154\
+Masaya | Nicaragua | Masaya | 88971\
+Maseru | Lesotho | Maseru | 297000\
+al-Sib | Oman | Masqat | 155000\
+Boston | United States | Massachusetts | 589141\
+Matanzas | Cuba | Matanzas | 123273\
+Cuiabá | Brazil | Mato Grosso | 453813\
+Campo Grande | Brazil | Mato Grosso do Sul | 649593\
+Talca | Chile | Maule | 187557\
+Mayagüez | Puerto Rico | Mayagüez | 98434\
+al-Amara | Iraq | Maysan | 208797\
+Sari | Iran | Mazandaran | 195882\
+Warszawa | Poland | Mazowieckie | 1615369\
+Mbeya | Tanzania | Mbeya | 130800\
+Rostock | Germany | Mecklenburg-Vorpomme | 203279\
+Medina | Saudi Arabia | Medina | 608300\
+Shillong | India | Meghalaya | 131719\
+Drobeta-Turnu Severin | Romania | Mehedinti | 117865\
+Jedda | Saudi Arabia | Mekka | 2046300\
+Meknès | Morocco | Meknès-Tafilalet | 460000\
+Godoy Cruz | Argentina | Mendoza | 206998\
+Mérida | Venezuela | Mérida | 224887\
+Villavicencio | Colombia | Meta | 273140\
+Ecatepec de Morelos | Mexico | México | 1620303\
+Miaoli | Taiwan | Miaoli | 90000\
+Detroit | United States | Michigan | 951270\
+Morelia | Mexico | Michoacán de Ocampo | 619958\
+Toulouse | France | Midi-Pyrénées | 390350\
+Gweru | Zimbabwe | Midlands | 128037\
+Yokkaichi | Japan | Mie | 288173\
+Belo Horizonte | Brazil | Minas Gerais | 2139125\
+Mingəçevir | Azerbaijan | Mingəçevir | 93900\
+Minneapolis | United States | Minnesota | 382618\
+Borisov | Belarus | Minsk | 151000\
+Petare | Venezuela | Miranda | 488868\
+Posadas | Argentina | Misiones | 201273\
+Misrata | Libyan Arab Jamahiriya | Misrata | 121669\
+Jackson | United States | Mississippi | 184256\
+Kansas City | United States | Missouri | 441545\
+Sendai | Japan | Miyagi | 989975\
+Miyazaki | Japan | Miyazaki | 303784\
+Aizawl | India | Mizoram | 155240\
+Mogiljov | Belarus | Mogiljov | 356000\
+Ambon | Indonesia | Molukit | 249312\
+Moulmein (Mawlamyine) | Myanmar | Mon | 307900\
+Maturín | Venezuela | Monagas | 319726\
+Billings | United States | Montana | 92988\
+Podgorica | Yugoslavia | Montenegro | 135000\
+Montevideo | Uruguay | Montevideo | 1236000\
+Monrovia | Liberia | Montserrado | 850000\
+Saransk | Russian Federation | Mordva | 314800\
+Cuernavaca | Mexico | Morelos | 337966\
+Morogoro | Tanzania | Morogoro | 117800\
+Moscow | Russian Federation | Moscow (City) | 8389200\
+Podolsk | Russian Federation | Moskova | 194300\
+Mostaganem | Algeria | Mostaganem | 115212\
+Witbank | South Africa | Mpumalanga | 167183\
+Cork | Ireland | Munster | 127187\
+Murcia | Spain | Murcia | 353504\
+Târgu Mures | Romania | Mures | 165153\
+Murmansk | Russian Federation | Murmansk | 376300\
+Mwanza | Tanzania | Mwanza | 172300\
+Mykolajiv | Ukraine | Mykolajiv | 508000\
+Nablus | Palestine | Nablus | 100231\
+Nagano | Japan | Nagano | 361391\
+Nagasaki | Japan | Nagasaki | 432759\
+Nairobi | Kenya | Nairobi | 2290000\
+Najran | Saudi Arabia | Najran | 91000\
+Nakhon Pathom | Thailand | Nakhon Pathom | 94100\
+Nakhon Ratchasima | Thailand | Nakhon Ratchasima | 181400\
+Nakhon Sawan | Thailand | Nakhon Sawan | 123800\
+Nam Dinh | Vietnam | Nam Ha | 171699\
+Namangan | Uzbekistan | Namangan | 370500\
+Namibe | Angola | Namibe | 118200\
+Nampo | North Korea | Nampo-si | 566200\
+Nampula | Mozambique | Nampula | 303346\
+Namur | Belgium | Namur | 105419\
+Nantou | Taiwan | Nantou | 104723\
+Nara | Japan | Nara | 362812\
+Pasto | Colombia | Nariño | 332396\
+Port Moresby | Papua New Guinea | National Capital Dis | 247000\
+Quezon | Philippines | National Capital Reg | 2173831\
+Pamplona [Iruña] | Spain | Navarra | 180483\
+Navoi | Uzbekistan | Navoi | 116300\
+Tepic | Mexico | Nayarit | 305025\
+Piatra Neamt | Romania | Neamt | 125070\
+Omaha | United States | Nebraska | 390007\
+Seremban | Malaysia | Negeri Sembilan | 182869\
+Neuquén | Argentina | Neuquén | 167296\
+Las Vegas | United States | Nevada | 478434\
+Manchester | United States | New Hampshire | 107006\
+Newark | United States | New Jersey | 273546\
+Albuquerque | United States | New Mexico | 448607\
+Nassau | Bahamas | New Providence | 172000\
+Sydney | Australia | New South Wales | 3276207\
+New York | United States | New York | 8008278\
+Saint John´s | Canada | Newfoundland | 101936\
+Helsinki [Helsingfors] | Finland | Newmaa | 555474\
+Vinh | Vietnam | Nghe An | 112455\
+Niamey | Niger | Niamey | 420000\
+Nicosia | Cyprus | Nicosia | 195000\
+Hannover | Germany | Niedersachsen | 514718\
+Minna | Nigeria | Niger | 136900\
+Niigata | Japan | Niigata | 497464\
+Mosul | Iraq | Ninawa | 879000\
+Yinchuan | China | Ningxia | 544500\
+Nizni Novgorod | Russian Federation | Nizni Novgorod | 1357000\
+Moroni | Comoros | Njazidja | 36000\
+Nonthaburi | Thailand | Nonthaburi | 292100\
+Eindhoven | Netherlands | Noord-Brabant | 201843\
+Amsterdam | Netherlands | Noord-Holland | 731200\
+Garoua | Cameroon | Nord | 177000\
+Bamenda | Cameroon | Nord-Ouest | 138000\
+Reims | France | Nord-Pas-de-Calais | 187206\
+Aalborg | Denmark | Nordjylland | 161161\
+Köln | Germany | Nordrhein-Westfalen | 962507\
+Cúcuta | Colombia | Norte de Santander | 606932\
+Linz | Austria | North Austria | 188022\
+Charlotte | United States | North Carolina | 540828\
+Jabaliya | Palestine | North Gaza | 113901\
+Belfast | United Kingdom | North Ireland | 287500\
+Petropavl | Kazakstan | North Kazakstan | 203500\
+Butembo | Congo, The Democratic Republic of the | North Kivu | 109406\
+Vladikavkaz | Russian Federation | North Ossetia-Alania | 310100\
+Klerksdorp | South Africa | North West | 261911\
+Tamale | Ghana | Northern | 151069\
+Kimberley | South Africa | Northern Cape | 197254\
+Cagayan de Oro | Philippines | Northern Mindanao | 461877\
+Peshawar | Pakistan | Nothwest Border Prov | 988005\
+Nouakchott | Mauritania | Nouakchott | 667300\
+Cape Breton | Canada | Nova Scotia | 114733\
+Veliki Novgorod | Russian Federation | Novgorod | 299500\
+Novosibirsk | Russian Federation | Novosibirsk | 1398800\
+Monterrey | Mexico | Nuevo León | 1108499\
+Mataram | Indonesia | Nusa Tenggara Barat | 306600\
+Kupang | Indonesia | Nusa Tenggara Timur | 129300\
+Kisumu | Kenya | Nyanza | 192733\
+Rancagua | Chile | O´Higgins | 212977\
+Oaxaca de Juárez | Mexico | Oaxaca | 256848\
+Odesa | Ukraine | Odesa | 1011000\
+Abeokuta | Nigeria | Ogun | 427400\
+Columbus | United States | Ohio | 711470\
+Oita | Japan | Oita | 433401\
+Okayama | Japan | Okayama | 624269\
+Naha | Japan | Okinawa | 299851\
+Oklahoma City | United States | Oklahoma | 506132\
+Omsk | Russian Federation | Omsk | 1148900\
+Ado-Ekiti | Nigeria | Ondo & Ekiti | 359400\
+Toronto | Canada | Ontario | 688275\
+Opole | Poland | Opolskie | 129553\
+Oran | Algeria | Oran | 609823\
+Ordu | Turkey | Ordu | 133642\
+Örebro | Sweden | Örebros län | 124207\
+Portland | United States | Oregon | 529121\
+Orenburg | Russian Federation | Orenburg | 523600\
+Oujda | Morocco | Oriental | 365382\
+Bhubaneswar | India | Orissa | 411542\
+Orjol | Russian Federation | Orjol | 344500\
+Nazret | Ethiopia | Oromia | 127842\
+Oruro | Bolivia | Oruro | 223553\
+Osaka | Japan | Osaka | 2595674\
+Osh | Kyrgyzstan | Osh | 222700\
+Osijek | Croatia | Osijek-Baranja | 104761\
+Oslo | Norway | Oslo | 508726\
+Osmaniye | Turkey | Osmaniye | 146003\
+Ljubljana | Slovenia | Osrednjeslovenska | 270986\
+Porto-Novo | Benin | Ouémé | 194000\
+Port-au-Prince | Haiti | Ouest | 884472\
+Birkirkara | Malta | Outer Harbour | 21445\
+Enschede | Netherlands | Overijssel | 149544\
+Ibadan | Nigeria | Oyo & Osun | 1432000\
+Kuantan | Malaysia | Pahang | 199484\
+Lahti | Finland | Päijät-Häme | 96921\
+Ciudad de Panamá | Panama | Panamá | 471373\
+Panevezys | Lithuania | Panevezys | 133695\
+Belém | Brazil | Pará | 1186926\
+João Pessoa | Brazil | Paraíba | 584029\
+Paramaribo | Suriname | Paramaribo | 112000\
+Curitiba | Brazil | Paraná | 1584232\
+Pavlodar | Kazakstan | Pavlodar | 300500\
+Nantes | France | Pays de la Loire | 270251\
+Pegu (Bago) | Myanmar | Pegu [Bago] | 190900\
+Peking | China | Peking | 7472000\
+Philadelphia | United States | Pennsylvania | 1517550\
+Penza | Russian Federation | Penza | 532200\
+Ipoh | Malaysia | Perak | 382853\
+Perm | Russian Federation | Perm | 1009700\
+Recife | Brazil | Pernambuco | 1378087\
+Phnom Penh | Cambodia | Phnom Penh | 570155\
+Teresina | Brazil | Piauí | 691942\
+Amiens | France | Picardie | 135501\
+Quito | Ecuador | Pichincha | 1573458\
+Torino | Italy | Piemonte | 903705\
+St Petersburg | Russian Federation | Pietari | 4694000\
+Pihkova | Russian Federation | Pihkova | 201500\
+Pinar del Río | Cuba | Pinar del Río | 142100\
+Pingtung | Taiwan | Pingtung | 214727\
+Tampere | Finland | Pirkanmaa | 195468\
+Piura | Peru | Piura | 325000\
+Beau Bassin-Rose Hill | Mauritius | Plaines Wilhelms | 100616\
+Jos | Nigeria | Plateau & Nassarawa | 206300\
+Plovdiv | Bulgaria | Plovdiv | 342584\
+Plymouth | Montserrat | Plymouth | 2000\
+Rzeszów | Poland | Podkarpackie | 162049\
+Bialystok | Poland | Podlaskie | 283937\
+Maribor | Slovenia | Podravska | 115532\
+Oulu | Finland | Pohjois-Pohjanmaa | 120753\
+Palikir | Micronesia, Federated States of | Pohnpei | 8600\
+Gdansk | Poland | Pomorskie | 458988\
+Ponce | Puerto Rico | Ponce | 186475\
+Pondicherry | India | Pondicherry | 203065\
+Port Said | Egypt | Port Said | 469533\
+Port-Louis | Mauritius | Port-Louis | 138200\
+Port-of-Spain | Trinidad and Tobago | Port-of-Spain | 43396\
+Porto | Portugal | Porto | 273060\
+Acarigua | Venezuela | Portuguesa | 158954\
+Potosí | Bolivia | Potosí | 140642\
+Ploiesti | Romania | Prahova | 251348\
+Vladivostok | Russian Federation | Primorje | 606200\
+Rijeka | Croatia | Primorje-Gorski Kota | 167964\
+Marseille | France | Provence-Alpes-Côte | 798430\
+Puebla | Mexico | Puebla | 1346176\
+San Felipe de Puerto Plata | Dominican Republic | Puerto Plata | 89423\
+Pinang | Malaysia | Pulau Pinang | 219603\
+Pultava [Poltava] | Ukraine | Pultava | 313000\
+Lahore | Pakistan | Punjab | 5063499\
+Juliaca | Peru | Puno | 142576\
+Pusan | South Korea | Pusan | 3804522\
+Phyongsong | North Korea | Pyongan N | 272934\
+Sinuiju | North Korea | Pyongan P | 326011\
+Pyongyang | North Korea | Pyongyang-si | 2484000\
+Qandahar | Afghanistan | Qandahar | 237500\
+Qaraghandy | Kazakstan | Qaraghandy | 436900\
+Karsi | Uzbekistan | Qashqadaryo | 194100\
+Unayza | Saudi Arabia | Qasim | 91100\
+Qazvin | Iran | Qazvin | 291117\
+Qina | Egypt | Qina | 171275\
+Xining | China | Qinghai | 700200\
+Qom | Iran | Qom | 777677\
+Qostanay | Kazakstan | Qostanay | 221400\
+Cam Pha | Vietnam | Quang Binh | 209086\
+Da Nang | Vietnam | Quang Nam-Da Nang | 382674\
+Hong Gai | Vietnam | Quang Ninh | 127484\
+Montréal | Canada | Québec | 1016376\
+Brisbane | Australia | Queensland | 1291117\
+San Juan del Río | Mexico | Querétaro | 179300\
+Querétaro | Mexico | Querétaro de Arteaga | 639839\
+Quetzaltenango | Guatemala | Quetzaltenango | 90801\
+Armenia | Colombia | Quindío | 288977\
+Benito Juárez | Mexico | Quintana Roo | 419276\
+Qyzylorda | Kazakstan | Qyzylorda | 157400\
+Rabat | Morocco | Rabat-Salé-Zammour-Z | 623457\
+Rafah | Palestine | Rafah | 92020\
+Jaipur | India | Rajasthan | 1458483\
+Rajshahi | Bangladesh | Rajshahi | 294056\
+Sittwe (Akyab) | Myanmar | Rakhine | 137600\
+Rangoon (Yangon) | Myanmar | Rangoon [Yangon] | 3361700\
+Avarua | Cook Islands | Rarotonga | 11900\
+Banja Luka | Bosnia and Herzegovina | Republika Srpska | 143079\
+Mainz | Germany | Rheinland-Pfalz | 183134\
+Providence | United States | Rhode Island | 173618\
+Lyon | France | Rhône-Alpes | 445452\
+al-Kharj | Saudi Arabia | Riad | 152100\
+Pekan Baru | Indonesia | Riau | 438638\
+Nakuru | Kenya | Rift Valley | 163927\
+Riga | Latvia | Riika | 764328\
+Rio de Janeiro | Brazil | Rio de Janeiro | 5598953\
+Natal | Brazil | Rio Grande do Norte | 688955\
+Porto Alegre | Brazil | Rio Grande do Sul | 1314032\
+Pereira | Colombia | Risaralda | 381725\
+Port Harcourt | Nigeria | Rivers & Bayelsa | 410000\
+Rivne | Ukraine | Rivne | 245000\
+Riyadh | Saudi Arabia | Riyadh | 3324000\
+Rjazan | Russian Federation | Rjazan | 529900\
+Stavanger | Norway | Rogaland | 108848\
+Porto Velho | Brazil | Rondônia | 309750\
+Boa Vista | Brazil | Roraima | 167185\
+Rostov-na-Donu | Russian Federation | Rostov-na-Donu | 1012700\
+Ruse | Bulgaria | Ruse | 166467\
+Saarbrücken | Germany | Saarland | 183836\
+Sandakan | Malaysia | Sabah | 125841\
+Saga | Japan | Saga | 170034\
+Monywa | Myanmar | Sagaing | 138600\
+Jakutsk | Russian Federation | Saha (Jakutia) | 195400\
+Juzno-Sahalinsk | Russian Federation | Sahalin | 179200\
+Saint George | Bermuda | Saint George´s | 1800\
+Jamestown | Saint Helena | Saint Helena | 1500\
+Saint-Denis | Réunion | Saint-Denis | 131480\
+Saint-Louis | Senegal | Saint-Louis | 132400\
+Saint-Pierre | Saint Pierre and Miquelon | Saint-Pierre | 5808\
+Garapan | Northern Mariana Islands | Saipan | 9200\
+Urawa | Japan | Saitama | 469675\
+Sakarya (Adapazari) | Turkey | Sakarya | 190641\
+Leipzig | Germany | Saksi | 489532\
+Salta | Argentina | Salta | 367550\
+Salzburg | Austria | Salzburg | 144247\
+Samara | Russian Federation | Samara | 1156100\
+Samarkand | Uzbekistan | Samarkand | 361800\
+Samsun | Turkey | Samsun | 339871\
+San José | Costa Rica | San José | 339131\
+San Juan | Puerto Rico | San Juan | 434374\
+San Luis | Argentina | San Luis | 110136\
+San Luis Potosí | Mexico | San Luis Potosí | 669353\
+San Marino | San Marino | San Marino | 2294\
+San Miguel | El Salvador | San Miguel | 127696\
+San Miguelito | Panama | San Miguelito | 315382\
+San Pedro de Macorís | Dominican Republic | San Pedro de Macorís | 124735\
+San Salvador | El Salvador | San Salvador | 415346\
+Sanaa | Yemen | Sanaa | 503600\
+Sancti-Spíritus | Cuba | Sancti-Spíritus | 100751\
+Sanliurfa | Turkey | Sanliurfa | 405905\
+Santa Ana | El Salvador | Santa Ana | 139389\
+Joinville | Brazil | Santa Catarina | 428011\
+Santa Cruz de la Sierra | Bolivia | Santa Cruz | 935361\
+Rosario | Argentina | Santa Fé | 907718\
+Santafé de Bogotá | Colombia | Santafé de Bogotá | 6260862\
+Bucaramanga | Colombia | Santander | 515555\
+Santiago de Chile | Chile | Santiago | 4703954\
+Santiago de Cuba | Cuba | Santiago de Cuba | 433180\
+Santiago del Estero | Argentina | Santiago del Estero | 189947\
+São Paulo | Brazil | São Paulo | 9968485\
+Praia | Cape Verde | São Tiago | 94800\
+Saratov | Russian Federation | Saratov | 874000\
+Kuching | Malaysia | Sarawak | 148059\
+Cagliari | Italy | Sardinia | 165926\
+Saskatoon | Canada | Saskatchewan | 193647\
+Satu Mare | Romania | Satu Mare | 130059\
+Savannakhet | Laos | Savannakhet | 96652\
+Sawhaj | Egypt | Sawhaj | 170125\
+Schaan | Liechtenstein | Schaan | 5346\
+Kiel | Germany | Schleswig-Holstein | 233795\
+Glasgow | United Kingdom | Scotland | 619680\
+Petaling Jaya | Malaysia | Selangor | 254350\
+Shahrud | Iran | Semnan | 104765\
+Seoul | South Korea | Seoul | 9981619\
+Aracaju | Brazil | Sergipe | 445555\
+Serravalle | San Marino | Serravalle/Dogano | 4802\
+Sétif | Algeria | Sétif | 179055\
+Liberec | Czech Republic | Severní Cechy | 99155\
+Ostrava | Czech Republic | Severní Morava | 320041\
+Sfax | Tunisia | Sfax | 257800\
+Xi´an | China | Shaanxi | 2761400\
+Lubumbashi | Congo, The Democratic Republic of the | Shaba | 851381\
+al-Arish | Egypt | Shamal Sina | 100447\
+Taunggyi (Taunggye) | Myanmar | Shan | 131500\
+Qingdao | China | Shandong | 2596000\
+Shanghai | China | Shanghai | 9696300\
+Taiyuan | China | Shanxi | 1968400\
+Sharja | United Arab Emirates | Sharja | 320095\
+Port-Vila | Vanuatu | Shefa | 33700\
+Otsu | Japan | Shiga | 282070\
+Matsue | Japan | Shimane | 149821\
+Hamamatsu | Japan | Shizuoka | 568796\
+Šiauliai | Lithuania | Šiauliai | 146563\
+Sibiu | Romania | Sibiu | 169611\
+Chengdu | China | Sichuan | 3361500\
+Sidi Bel Abbès | Algeria | Sidi Bel Abbès | 153106\
+Siem Reap | Cambodia | Siem Reap | 105100\
+Siirt | Turkey | Siirt | 107100\
+Culiacán | Mexico | Sinaloa | 744859\
+Mirpur Khas | Pakistan | Sind | 184500\
+Karachi | Pakistan | Sindh | 9269265\
+Gjumri | Armenia | Širak | 211700\
+Palermo | Italy | Sisilia | 683794\
+Zahedan | Iran | Sistan va Baluchesta | 419518\
+Sivas | Turkey | Sivas | 246642\
+Malmö | Sweden | Skåne län | 259579\
+Skikda | Algeria | Skikda | 128747\
+Skopje | Macedonia | Skopje | 444299\
+Katowice | Poland | Slaskie | 345934\
+Smolensk | Russian Federation | Smolensk | 353400\
+Beira | Mozambique | Sofala | 397368\
+Sokoto | Nigeria | Sokoto & Kebbi & Zam | 204900\
+Hat Yai | Thailand | Songkhla | 148632\
+Hermosillo | Mexico | Sonora | 608697\
+Trondheim | Norway | Sør-Trøndelag | 150166\
+Agadir | Morocco | Souss Massa-Draâ | 155244\
+Sousse | Tunisia | Sousse | 145900\
+Adelaide | Australia | South Australia | 978100\
+Columbia | United States | South Carolina | 116278\
+Sioux Falls | United States | South Dakota | 123975\
+Shymkent | Kazakstan | South Kazakstan | 360100\
+Bukavu | Congo, The Democratic Republic of the | South Kivu | 201569\
+Bikenibeu | Kiribati | South Tarawa | 5055\
+Davao | Philippines | Southern Mindanao | 1147116\
+Antipolo | Philippines | Southern Tagalog | 470866\
+Split | Croatia | Split-Dalmatia | 189388\
+Kingstown | Saint Vincent and the Grenadines | St George | 17100\
+Basseterre | Saint Kitts and Nevis | St George Basseterre | 11600\
+Saint John´s | Antigua and Barbuda | St John | 24000\
+Bridgetown | Barbados | St Michael | 6070\
+Charlotte Amalie | Virgin Islands, U.S. | St Thomas | 13000\
+Kingston | Jamaica | St. Andrew | 103962\
+Spanish Town | Jamaica | St. Catherine | 110379\
+Stavropol | Russian Federation | Stavropol | 343300\
+Graz | Austria | Steiermark | 240967\
+Tórshavn | Faroe Islands | Streymoyar | 14542\
+Suceava | Romania | Suceava | 118549\
+Cumaná | Venezuela | Sucre | 293105\
+Suez | Egypt | Suez | 417610\
+Ujung Pandang | Indonesia | Sulawesi Selatan | 1060257\
+Palu | Indonesia | Sulawesi Tengah | 142800\
+Kendari | Indonesia | Sulawesi Tenggara | 94800\
+Manado | Indonesia | Sulawesi Utara | 332288\
+Padang | Indonesia | Sumatera Barat | 534474\
+Palembang | Indonesia | Sumatera Selatan | 1222764\
+Medan | Indonesia | Sumatera Utara | 1843919\
+Sumqayıt | Azerbaijan | Sumqayıt | 283000\
+Sumy | Ukraine | Sumy | 294000\
+Termiz | Uzbekistan | Surkhondaryo | 109500\
+Jekaterinburg | Russian Federation | Sverdlovsk | 1266300\
+Kielce | Poland | Swietokrzyskie | 212383\
+Sylhet | Bangladesh | Sylhet | 117396\
+Nyiregyháza | Hungary | Szabolcs-Szatmár-Ber | 112419\
+Centro (Villahermosa) | Mexico | Tabasco | 519873\
+Tabora | Tanzania | Tabora | 92800\
+Tabuk | Saudi Arabia | Tabuk | 292600\
+San Cristóbal | Venezuela | Táchira | 319373\
+Tacna | Peru | Tacna | 215683\
+Beni-Mellal | Morocco | Tadla-Azilal | 140212\
+Taegu | South Korea | Taegu | 2548568\
+Taejon | South Korea | Taejon | 1425835\
+Faaa | French Polynesia | Tahiti | 25888\
+Taichung | Taiwan | Taichung | 940589\
+Tainan | Taiwan | Tainan | 728060\
+Taipei | Taiwan | Taipei | 2641312\
+Taitung | Taiwan | Taitung | 111039\
+Taizz | Yemen | Taizz | 317600\
+Uzgorod | Ukraine | Taka-Karpatia | 127000\
+Reynosa | Mexico | Tamaulipas | 419776\
+Tambov | Russian Federation | Tambov | 312000\
+Chennai (Madras) | India | Tamil Nadu | 3841396\
+Tanga | Tanzania | Tanga | 137400\
+Tanger | Morocco | Tanger-Tétouan | 521735\
+Chungli | Taiwan | Taoyuan | 318649\
+Arica | Chile | Tarapacá | 189036\
+Taraz | Kazakstan | Taraz | 330100\
+Tarija | Bolivia | Tarija | 125255\
+Tartu | Estonia | Tartumaa | 101246\
+Hobart | Australia | Tasmania | 126118\
+Kazan | Russian Federation | Tatarstan | 1101000\
+Taza | Morocco | Taza-Al Hoceima-Taou | 92700\
+Tbilisi | Georgia | Tbilisi | 1235200\
+Tébessa | Algeria | Tébessa | 112007\
+Teheran | Iran | Teheran | 6758845\
+Çorlu | Turkey | Tekirdag | 123300\
+Tel Aviv-Jaffa | Israel | Tel Aviv | 348100\
+Mergui (Myeik) | Myanmar | Tenasserim [Tanintha | 122700\
+Memphis | United States | Tennessee | 650100\
+Kuala Terengganu | Malaysia | Terengganu | 228119\
+Ternopil | Ukraine | Ternopil | 236000\
+Tete | Mozambique | Tete | 101984\
+Houston | United States | Texas | 1953631\
+Larisa | Greece | Thessalia | 113090\
+Thiès | Senegal | Thiès | 248000\
+Thimphu | Bhutan | Thimphu | 22000\
+Hue | Vietnam | Thua Thien-Hue | 219149\
+Erfurt | Germany | Thüringen | 201267\
+Tianjin | China | Tianjin | 5286800\
+Tiaret | Algeria | Tiaret | 100118\
+Lhasa | China | Tibet | 120000\
+My Tho | Vietnam | Tien Giang | 108404\
+Mekele | Ethiopia | Tigray | 96938\
+Timisoara | Romania | Timis | 324304\
+Tirana | Albania | Tirana | 270000\
+Innsbruck | Austria | Tiroli | 111752\
+Tjumen | Russian Federation | Tjumen | 503400\
+Tlemcen (Tilimsen) | Algeria | Tlemcen | 110242\
+Toa Baja | Puerto Rico | Toa Baja | 94085\
+Toamasina | Madagascar | Toamasina | 127441\
+Palmas | Brazil | Tocantins | 121919\
+Utsunomiya | Japan | Tochigi | 440353\
+Tokat | Turkey | Tokat | 99500\
+Tokushima | Japan | Tokushima | 269649\
+Tokyo | Japan | Tokyo-to | 7980230\
+Ibagué | Colombia | Tolima | 393664\
+Tomsk | Russian Federation | Tomsk | 482100\
+Nuku´alofa | Tonga | Tongatapu | 22400\
+Road Town | Virgin Islands, British | Tortola | 8000\
+Firenze | Italy | Toscana | 376662\
+Circik | Uzbekistan | Toskent | 146400\
+Toskent | Uzbekistan | Toskent Shahri | 2117500\
+Tottori | Japan | Tottori | 147523\
+Toyama | Japan | Toyama | 325790\
+Trabzon | Turkey | Trabzon | 138234\
+Trento | Italy | Trentino-Alto Adige | 104906\
+Tripoli | Libyan Arab Jamahiriya | Tripoli | 1682000\
+Agartala | India | Tripura | 157358\
+Valera | Venezuela | Trujillo | 130281\
+Tšeljabinsk | Russian Federation | Tšeljabinsk | 1083200\
+Tšerkasy | Ukraine | Tšerkasy | 309000\
+Tšernigiv | Ukraine | Tšernigiv | 313000\
+Tšernivtsi | Ukraine | Tšernivtsi | 259000\
+Grozny | Russian Federation | Tšetšenia | 186000\
+Tšita | Russian Federation | Tšita | 309900\
+Tšeboksary | Russian Federation | Tšuvassia | 459200\
+San Miguel de Tucumán | Argentina | Tucumán | 470809\
+Tula | Russian Federation | Tula | 506100\
+Tulcea | Romania | Tulcea | 96278\
+Ambato | Ecuador | Tungurahua | 169612\
+Tunis | Tunisia | Tunis | 690600\
+Tafuna | American Samoa | Tutuila | 5200\
+Tver | Russian Federation | Tver | 454900\
+Kyzyl | Russian Federation | Tyva | 101100\
+Ubon Ratchathani | Thailand | Ubon Ratchathani | 116300\
+Pucallpa | Peru | Ucayali | 220866\
+Izevsk | Russian Federation | Udmurtia | 652800\
+Udon Thani | Thailand | Udon Thani | 158100\
+Ulan Bator | Mongolia | Ulaanbaatar | 773700\
+Uljanovsk | Russian Federation | Uljanovsk | 667400\
+Perugia | Italy | Umbria | 156673\
+Apia | Samoa | Upolu | 35900\
+Uppsala | Sweden | Uppsala län | 189569\
+Usak | Turkey | Usak | 128162\
+Salt Lake City | United States | Utah | 181743\
+Utrecht | Netherlands | Utrecht | 234323\
+Kanpur | India | Uttar Pradesh | 1874409\
+Dehra Dun | India | Uttaranchal | 270159\
+Vaduz | Liechtenstein | Vaduz | 5043\
+Râmnicu Vâlcea | Romania | Vâlcea | 119741\
+Valencia | Spain | Valencia | 739412\
+Cali | Colombia | Valle | 2077386\
+Viña del Mar | Chile | Valparaíso | 312493\
+Van | Turkey | Van | 219319\
+Varna | Bulgaria | Varna | 299801\
+Turku [Åbo] | Finland | Varsinais-Suomi | 172561\
+Umeå | Sweden | Västerbottens län | 104512\
+Sundsvall | Sweden | Västernorrlands län | 93126\
+Västerås | Sweden | Västmanlands län | 126328\
+Lausanne | Switzerland | Vaud | 114500\
+Venezia | Italy | Veneto | 277305\
+Veracruz | Mexico | Veracruz | 457119\
+Boca del Río | Mexico | Veracruz-Llave | 135721\
+Vientiane | Laos | Viangchan | 531800\
+Melbourne | Australia | Victoria | 2865329\
+Santa Clara | Cuba | Villa Clara | 207350\
+Vilnius | Lithuania | Vilna | 577969\
+Vinnytsja | Ukraine | Vinnytsja | 391000\
+Virginia Beach | United States | Virginia | 425257\
+Vitebsk | Belarus | Vitebsk | 340000\
+Vladimir | Russian Federation | Vladimir | 337100\
+Novi Sad | Yugoslavia | Vojvodina | 179626\
+Volgograd | Russian Federation | Volgograd | 993400\
+Tšerepovets | Russian Federation | Vologda | 324400\
+Lutsk | Ukraine | Volynia | 217000\
+Voronez | Russian Federation | Voronez | 907700\
+Focsani | Romania | Vrancea | 98979\
+Košice | Slovakia | Východné Slovensko | 241874\
+Hradec Králové | Czech Republic | Východní Cechy | 98080\
+Wakayama | Japan | Wakayama | 391233\
+Cardiff | United Kingdom | Wales | 321000\
+Mata-Utu | Wallis and Futuna | Wallis | 1137\
+Olsztyn | Poland | Warminsko-Mazurskie | 170904\
+Seattle | United States | Washington | 563374\
+al-Kut | Iraq | Wasit | 183183\
+Wellington | New Zealand | Wellington | 166700\
+Perth | Australia | West Australia | 1096829\
+Urmia | Iran | West Azerbaidzan | 435200\
+Calcutta [Kolkata] | India | West Bengali | 4399819\
+Brugge | Belgium | West Flanderi | 116246\
+Gothenburg [Göteborg] | Sweden | West Götanmaan län | 466990\
+Patras | Greece | West Greece | 153344\
+Jaya Pura | Indonesia | West Irian | 94700\
+West Island | Cocos (Keeling) Islands | West Island | 167\
+Bandung | Indonesia | West Java | 2429000\
+Kananga | Congo, The Democratic Republic of the | West Kasai | 393030\
+Oral | Kazakstan | West Kazakstan | 195500\
+Freetown | Sierra Leone | Western | 850000\
+Cape Town | South Africa | Western Cape | 2352121\
+Zamboanga | Philippines | Western Mindanao | 601794\
+Bacolod | Philippines | Western Visayas | 429076\
+Poznan | Poland | Wielkopolskie | 576899\
+Wien | Austria | Wien | 1608144\
+Kuala Lumpur | Malaysia | Wilayah Persekutuan | 1297526\
+Milwaukee | United States | Wisconsin | 596974\
+Hargeysa | Somalia | Woqooyi Galbeed | 90000\
+Urumtši [Ürümqi] | China | Xinxiang | 1310100\
+Yamagata | Japan | Yamagata | 255617\
+Shimonoseki | Japan | Yamaguchi | 257263\
+Nojabrsk | Russian Federation | Yamalin Nenetsia | 97300\
+Kofu | Japan | Yamanashi | 199753\
+Yamoussoukro | Côte d’Ivoire | Yamoussoukro | 130000\
+Hyesan | North Korea | Yanggang | 178020\
+San Felipe | Venezuela | Yaracuy | 90940\
+Yazd | Iran | Yazd | 326776\
+Yerevan | Armenia | Yerevan | 1248700\
+Yogyakarta | Indonesia | Yogyakarta | 418944\
+Mérida | Mexico | Yucatán | 703324\
+Touliu | Taiwan | Yünlin | 98900\
+Kunming | China | Yunnan | 1829500\
+Fresnillo | Mexico | Zacatecas | 182744\
+Szczecin | Poland | Zachodnio-Pomorskie | 416988\
+Quelimane | Mozambique | Zambézia | 150116\
+Zanjan | Iran | Zanjan | 286295\
+Zanzibar | Tanzania | Zanzibar West | 157634\
+Plzen | Czech Republic | Zapadní Cechy | 166759\
+Zaporizzja | Ukraine | Zaporizzja | 848000\
+Hangzhou | China | Zhejiang | 2190500\
+Ziguinchor | Senegal | Ziguinchor | 192000\
+Zinder | Niger | Zinder | 120892\
+Zonguldak | Turkey | Zonguldak | 111542\
+Salala | Oman | Zufar | 131813\
+Rotterdam | Netherlands | Zuid-Holland | 593321\
+Maracaíbo | Venezuela | Zulia | 1304776\
+Zürich | Switzerland | Zürich | 336800\
+Zytomyr | Ukraine | Zytomyr | 297000\

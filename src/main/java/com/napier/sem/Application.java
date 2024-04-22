@@ -153,19 +153,21 @@ public class Application {
         List<CapitalCityReport> capitalCityReportsN = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.code = city.countryCode ORDER BY city.population DESC LIMIT ?", CapitalCityReport::new, finalN);
         //System.out.println(capitalCityReportsN);
 
+        List<CapitalCityReport> capitalCityReportContinentsN = new ArrayList<>();
         //The top N populated capital cities in a continent where N is provided by the user.
         continents.stream()
                 .map(Distinct::getName)
                 .forEach(continentName -> {
-                    List<CapitalCityReport> capitalCityReportContinentsN = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.continent = ? AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT ?", CapitalCityReport::new, continentName, finalN);
+                    capitalCityReportContinentsN.addAll(objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.continent = ? AND country.code = city.countryCode ORDER BY country.continent ASC, city.population DESC LIMIT ?", CapitalCityReport::new, continentName, finalN));
                     //System.out.println(capitalCityReportContinentsN);
                 });
 
+        List<CapitalCityReport> capitalCityReportRegionsN = new ArrayList<>();
         //The top N populated capital cities in a region where N is provided by the user.
         regions.stream()
                 .map(Distinct::getName)
                 .forEach(regionName -> {
-                    List<CapitalCityReport> capitalCityReportRegionsN = objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = ? AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT ?", CapitalCityReport::new, regionName, finalN);
+                    capitalCityReportRegionsN.addAll(objectMapper.getObjectsFromDatabase("SELECT city.name, country.name AS country_name, city.population FROM country, city WHERE country.region = ? AND country.code = city.countryCode ORDER BY country.region ASC, city.population DESC LIMIT ?", CapitalCityReport::new, regionName, finalN));
                     //System.out.println(capitalCityReportRegionsN);
                 });
 
@@ -175,6 +177,8 @@ public class Application {
         combinedCapitalCityReports.addAll(capitalCityReportContinents);
         combinedCapitalCityReports.addAll(capitalCityReportRegions);
         combinedCapitalCityReports.addAll(capitalCityReportsN);
+        combinedCapitalCityReports.addAll(capitalCityReportContinentsN);
+        combinedCapitalCityReports.addAll(capitalCityReportRegionsN);
 
         // Convert combined reports to Markdown format
         List<String[]> combinedCapitalCityDataForMD = combinedCapitalCityReports.stream()
@@ -265,7 +269,10 @@ public class Application {
         combinedCityReports.addAll(cityReportCountries);
         combinedCityReports.addAll(cityReportDistricts);
         combinedCityReports.addAll(cityReportN);
+        combinedCityReports.addAll(cityReportContinentsN);
         combinedCityReports.addAll(cityReportRegionsN);
+        combinedCityReports.addAll(cityReportCountriesN);
+        combinedCityReports.addAll(cityReportDistrictsN);
 
         // Convert combined reports to Markdown format
         List<String[]> combinedCityDataForMD = combinedCityReports.stream()
