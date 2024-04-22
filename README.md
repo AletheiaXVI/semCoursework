@@ -12,6 +12,8 @@
 8. Our team will self-organize and everyone will be responsible for managing their workload
 9. Our key measure of progress is delivery of a working product & the goal is to produce working software rather than just documentation
 
+> 23 requirements of 32 have been implemented, which is 71.9%.
+
 | ID    | Name | Met  | Screenshot |
 |-------|------|------|------------|
 | 1     | All the countries in the world organised by largest population to smallest. | Yes | [image](https://github.com/AletheiaXVI/semCoursework/blob/master/Images/1.png) |
