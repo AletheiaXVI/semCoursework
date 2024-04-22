@@ -20,6 +20,7 @@ public class Application {
     /**
      * Runs the application.
      */
+
     public void run() throws SQLException {
         DatabaseConnection dbCon = DatabaseConnection.from(
                 "jdbc:mysql://db:3306/world?useSSL=false",
@@ -262,6 +263,33 @@ public class Application {
                     //System.out.println(cityReportDistrictsN);
                 });
 
+        // Combine all reports into a single list
+        List<CityReport> combinedCityReports = new ArrayList<>();
+        combinedCityReports.addAll(cityReport);
+        combinedCityReports.addAll(cityReportContinents);
+        combinedCityReports.addAll(cityReportRegions);
+        combinedCityReports.addAll(cityReportCountries);
+        combinedCityReports.addAll(cityReportDistricts);
+        combinedCityReports.addAll(cityReportN);
+
+        // Convert combined reports to Markdown format
+        List<String[]> combinedCityDataForMD = combinedCityReports.stream()
+                .map(report -> new String[]{
+                        report.getName(),
+                        report.getCountry(),
+                        report.getDistrict(),
+                        String.valueOf(report.getPopulation()),
+                })
+                .collect(Collectors.toList());
+
+        // Attempt to write the combined data to a Markdown file
+        try {
+            mdExportCities.writeToMD(combinedCityDataForMD);
+            System.out.println("All city reports exported");
+        } catch (IOException e) {
+            System.err.println("Error exporting all city reports to Markdown file: " + e.getMessage());
+        }
+
         System.out.println("Population Reports");
 
         String populationContinentQuery = "SELECT country.continent AS name, " +
@@ -319,7 +347,7 @@ public class Application {
         // percentage equation is (country population * (language percentage/100) / world Population) * 100
         // population equation is country population * (language percentage/100)
         String languageQuery = "SELECT cl.Language, " +
-                "(SUM(c.population * (cl.percentage/100)) / (SELECT sum(population) FROM country)) * 100 as Percentage, " +
+        "(SUM(c.population * (cl.percentage/100)) / (SELECT sum(population) FROM country)) * 100 as Percentage, " +
                 "SUM(c.population * (cl.percentage/100)) as Population " +
                 "FROM countrylanguage cl " +
                 "JOIN country c ON cl.countryCode = c.code " +
@@ -328,6 +356,27 @@ public class Application {
                 "ORDER BY Percentage DESC;";
         List<LanguageReport> languageReport = objectMapper.getObjectsFromDatabase(languageQuery, LanguageReport::new);
         //System.out.println(languageReport);
+
+        // Combine all reports into a single list
+        List<LanguageReport> combinedPopulationReports = new ArrayList<>();
+        combinedPopulationReports.addAll(languageReport);
+
+        // Convert combined reports to Markdown format
+        List<String[]> combinedPopulationDataForMD = combinedPopulationReports.stream()
+                .map(report -> new String[]{
+                        report.getLanguage(),
+                        String.valueOf(report.getPercentage()),
+                        String.valueOf(report.getPopulation()),
+                })
+                .collect(Collectors.toList());
+
+        // Attempt to write the combined data to a Markdown file
+        try {
+            mdExportPopulation.writeToMD(combinedPopulationDataForMD);
+            System.out.println("All population reports exported successfully.");
+        } catch (IOException e) {
+            System.err.println("Error exporting all population reports to Markdown file: " + e.getMessage());
+        }
 
         // cleanup
         scanner.close();
