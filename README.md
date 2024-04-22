@@ -39,10 +39,10 @@
 | 23    | The population of people, people living in cities, and people not living in cities in each continent. | Yes | image |
 | 24    | The population of people, people living in cities, and people not living in cities in each region. | Yes | image |
 | 25    | The population of people, people living in cities, and people not living in cities in each country. | Yes | image |
-| 26    | The population of the world. | Yes | image |
-| 27    | The population of a continent. | Yes | image |
-| 28    | The population of a region. | Yes | image |
-| 29    | The population of a country. | Yes | image |
-| 30    | The population of a district. | Yes | image |
-| 31    | The population of a city. | Yes | image |
+| 26    | The population of the world. | No |  |
+| 27    | The population of a continent. | No |  |
+| 28    | The population of a region. | No |  |
+| 29    | The population of a country. | No |  |
+| 30    | The population of a district. | No |  |
+| 31    | The population of a city. | No |  |
 | 32    | Number of people who speak the following the following languages (Chinese,English,Hindi,Spanish,Arabic) from greatest number to smallest, percentage of the world population: | Yes | image |
