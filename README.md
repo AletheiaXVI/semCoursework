@@ -33,9 +33,9 @@
 | 17    | All the capital cities in the world organised by largest population to smallest. | Yes | image |
 | 18    | All the capital cities in a continent organised by largest population to smallest. | Yes | image |
 | 19    | All the capital cities in a region organised by largest to smallest. | Yes | image |
-| 20    | The top N populated capital cities in the world where N is provided by the user. | Yes | image |
-| 21    | The top N populated capital cities in a continent where N is provided by the user. | Yes | image |
-| 22    | The top N populated capital cities in a region where N is provided by the user. | Yes | image |
+| 20    | The top N populated capital cities in the world where N is provided by the user. | No |  |
+| 21    | The top N populated capital cities in a continent where N is provided by the user. | No |  |
+| 22    | The top N populated capital cities in a region where N is provided by the user. | No |  |
 | 23    | The population of people, people living in cities, and people not living in cities in each continent. | Yes | image |
 | 24    | The population of people, people living in cities, and people not living in cities in each region. | Yes | image |
 | 25    | The population of people, people living in cities, and people not living in cities in each country. | Yes | image |
