@@ -89,7 +89,7 @@ public class Application {
         continents.stream()
                 .map(Distinct::getName)
                 .forEach(continentName -> {
-                    List<CountryReport> countryReportsContinentN = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND continent = '?'  ORDER BY continent ASC, population DESC LIMIT ?", CountryReport::new, continentName, finalN);
+                    List<CountryReport> countryReportsContinentN = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND continent = ?  ORDER BY continent ASC, population DESC LIMIT ?", CountryReport::new, continentName, finalN);
                     //System.out.println(countryReportsContinentN);
                 });
 
@@ -98,7 +98,7 @@ public class Application {
         regions.stream()
                 .map(Distinct::getName)
                 .forEach(regionName -> {
-                    List<CountryReport> countryReportsRegionN = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND region = '?'  ORDER BY region ASC, population DESC LIMIT ?", CountryReport::new, regionName, finalN);
+                    List<CountryReport> countryReportsRegionN = objectMapper.getObjectsFromDatabase("SELECT country.code, country.name, country.continent, country.region, country.population, city.name as 'capital' FROM country, city WHERE country.capital = city.id AND region = ?  ORDER BY region ASC, population DESC LIMIT ?", CountryReport::new, regionName, finalN);
                     //System.out.println(countryReportsRegionN);
                 });
 
